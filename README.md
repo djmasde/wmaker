@@ -26,7 +26,7 @@ wmtop: Window Maker processes monitor application.
 
 wmSun: Shows the times of the sunrise and sunset.
 
-wmix: A mixer app, for runs ok, please with root "modprobe snd-mixer-oss", or not runs. add a entry in /etc/rc.d/rc.local, like this: echo "modprobe snd-mixer-oss" >> /etc/rc.d/rc.local
+wmix: A mixer app, for runs ok, please runs with root: modprobe snd-mixer-oss, or not runs. add a entry in /etc/rc.d/rc.local, like this: echo "modprobe snd-mixer-oss" >> /etc/rc.d/rc.local
 
 Window Maker 0.17.5:
 
