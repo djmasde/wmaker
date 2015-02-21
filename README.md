@@ -1,6 +1,8 @@
 Repo for "destroyed or abandoned" dockers of Window Maker
 
-are:
+Note: various dockers use Imakefile, runs xmkmf -a, to generate a Makefile.
+
+Dockers are:
 
 wmwave: show wavelan connection aka wireless status, runs ok
 
@@ -15,6 +17,8 @@ wmeyes: xeyes in a docker "the most useless docker of Window Maker"
 pclock-bezier: A two-hour hack. Combined the rather cool Bezier Clock (bclock-1.0) with those wonky curves that bezier between the three hands, with pclock-0.10 (above), so the final result is a bezierclock-windowmaker-dockapp
 
 "hacked" to run ok. With -d command parameter, becomes in a common analog clock.
+
+wmavgload: Another system load meter.
 
 Window Maker 0.17.5:
 
