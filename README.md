@@ -45,3 +45,5 @@ run this in root user with su or sudo commands.
 runs wmaker.inst script, and enjoy :)
 
 Screenshot of this older wmaker: http://i.imgur.com/prNPBkP.jpg
+
+PD: Added very older Window Maker pixmaps, first appeared in wmaker 0.6.3
