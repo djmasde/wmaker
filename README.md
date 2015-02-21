@@ -32,7 +32,7 @@ $ make
 
 Runs with root: make install 
 
-run this in root user with su o sudo commands
+run this in root user with su or sudo commands
 
 "optionally" # make uninstall before install this very old wmaker..
 
