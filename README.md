@@ -10,6 +10,8 @@ wmtime.app: version of clock "wmdate" for wmaker, hacked to show Internet Time
 
 wmtimer: is a dockable alarm clock.
 
+wmeyes: xeyes in a docker "the most useless docker of Window Maker"
+
 Window Maker 0.17.5:
 
 Runs ok in 2015, only changues, re formated Makefiles, and configure to actual format, install without problems :)
