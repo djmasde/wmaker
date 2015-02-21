@@ -2,7 +2,7 @@ Repo for "destroyed or abandoned" dockers of Window Maker
 
 are:
 
-Wmwave: show wavelan connection aka wireless status, runs ok
+wmwave: show wavelan connection aka wireless status, runs ok
 
 wmtime.app: version of clock "wmdate" for wmaker, hacked to show Internet Time
 
@@ -10,7 +10,9 @@ wmtime.app: version of clock "wmdate" for wmaker, hacked to show Internet Time
 
 wmtimer: is a dockable alarm clock.
 
-Added Window Maker 0.17.5, runs ok, only changues, re formated Makefiles, and configure to actual format, install without problems :)
+Window Maker 0.17.5:
+
+Runs ok in 2015, only changues, re formated Makefiles, and configure to actual format, install without problems :)
 
 remember backup the GNUstep dir, if uses a never version of wmaker...
 
