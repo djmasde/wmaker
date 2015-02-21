@@ -1,0 +1,19 @@
+
+WindowMaker raster graphics library
+
+This library is used to manipulate images and convert them to
+a format that can be displayed through the X window system.
+Read the wraster.h header for an idea of what is available
+
+
+The following environment variables control some parameters:
+
+RIMAGE_CACHE <integer>
+
+Is the maximum number of images to store in the internal cache.
+Default is 8
+
+RIMAGE_CACHE_SIZE <integer>
+
+Is the size of the biggest image to store in the cache.
+Default is 4k (64x64)

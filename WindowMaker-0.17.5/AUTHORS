@@ -1,0 +1,139 @@
+Information about locale translators is at src/po/README and
+Library/WindowMaker/README
+
+Many thanks to the following people who have contributed
+patches, bug fixes and other stuff for WindowMaker:
+
+ABE Shige <sabe@ibm.net>
+I18N support, diagonal and vertical gradient, cosmetic additions to
+move/resize frames, window list menu, side swapping and other things for dock,
+japanese local, icon arrangement fix, remember current workspace after
+restart, dock bug fixes
+
+Andrea Arcangeli <arcangeli@mbox.queen.it>
+Fix for cascade window placement
+
+Peter Bentley <peter.bentley@nomura.co.uk>
+fixed WM_STATE handling bug, fixed some memory leaks, made application menus
+be mapped near the windows for non-click-to-focus modes.
+
+Ulf Betlehem <flu@iki.fi>
+Window resize with Meta-Click3, fixed OpaqueMove to send only 1 synth.
+ConfigureNotify
+
+Rob Clark <rclark@turing.cs.hmc.edu>
+Text input field, 15bpp support
+
+Frederic Devernay <devernay@istar.fr>
+dock fix for openwindows, made asclock be friendlier with colorcell impaired
+dpys, fixed wrlib to work with most visual/depth combinations, many
+miscellaneous bug fixes
+
+Adrian Drzewiecki <fsawd@aurora.alaska.edu>
+opaque window move
+
+Bjoern Giesler <Giesler@helpmate.com>
+Dynamic reconfiguration, libPropList
+
+Oliver Graf <ograf@fga.de>
+more configure.in fixes
+
+Chris Green <grapeape@uab.edu>
+FAQ author
+
+Nicolai P Guba <nicolai@gnu.ai.mit.edu>
+Documentation help, autoconf cleanup
+
+Mark 'segfault' Guzman <root@lsd.pbx.org>
+Various bugfixes
+
+Ullrich Hafner <hafner@informatik.uni-wuerzburg.de>
+Better detection of gfx libraries
+
+Greg Hayes <sdc@choice.net>
+Twisted miniaturization  animation
+
+HIDEKI Fujimoto <hideki70@osk2.threewebnet.or.jp>
+FreeBSD portability, icon arrangement fixes, dock initialization bug fix,
+some I18N related fixes
+
+IKARASHI Akira <ikarashi@itlb.te.noda.sut.ac.jp>
+Workspace change bug fix
+
+Sudish Joseph <sj@eng.mindspring.net>
+Modifier binding fix and other bug fixes
+
+Bradley M Keryan <keryan@andrew.cmu.edu>
+EMACS/keypad like cursor movement for WINGs textfield
+
+Jim Knoble <jmknoble@pobox.com>
+made autoarrange icons a runtime option, SHADOW_RESIZEBAR c-time option,
+no workspace switch to the same workspace, dashed icon selection
+
+Alfredo K. Kojima <kojima@inf.ufrgs.br>
+Project maintainer
+
+Jay Kominek <jkominek@xtn.net>
+smart and random placement
+
+Alexander Kourakos <awk@bnt.com>
+Move/resize code fixes.
+
+Ryan Land <rland@bc1.com>
+workspace "layers"
+
+Largo <largo@gnu.net>
+wm.gnu.net maintainer
+
+Stuart Luppescu <s-luppescu@uchicago.edu>
+Documentation help
+
+Marcelo E. Magallon <mmagallo@efis.ucr.ac.cr>
+CPP search path improvement
+
+MANOME Tomonori <manome@itlb.te.noda.sut.ac.jp>
+I18N bug fixes and japanese locale
+
+Brian Alexander Martin <brian@goober.wireless.ucsc.edu>
+PIPE_MENU
+
+Dan Pascu <dan@services.iiruc.ro>
+dock ghost (superfluous mode) fix, enhancement for scrollable menus,
+clip, numerous other stuff, project maintainer
+
+Anthony Quinn <Anthony.Quinn@usa.xerox.com>
+Sound code.
+
+Andreas Saudemont <saudemon@depinfo.u-bourgogne.fr>
+Initial code for clip's collapse feature.
+
+Ture Pelsson <ture@lysator.liu.se>
+various portability fixes, replaced busy wait with select() in event
+handling code, fixed problem with some misbehaved kids after a fork().
+
+Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>
+SCO portability, german locale, autoconf enhancements
+
+Christopher Seawood <cls@seawood.org>
+REDUCE_APPICON/single-icon
+
+Phillip Smith <teknix@alloy.net>
+FTP and WWW site provider/maintainer
+
+FRBall <frb@umr.edu>
+dgradient fix
+
+Lauri Tarkkala <ltarkkal@cs.hut.fi>
+SIGHUP unblock bug fix
+
+Sam Varner <varner@nmr.physics.wm.edu>
+many fixes and enhancements for move, resize and window placement code.
+
+Marco van Hylckama Vlieg <fatal@global.uibk.ac.at>
+house icon for WINGs file dialogs, defaullAppIcon and Clip xpm icon
+
+Andrea Mistrali <andre@ulmo.aleph.it>
+3D version of GNUstep icon.
+
+And a special thanks to Martin Eskildsen for giving me his
+copy of NEXTSTEP :-)

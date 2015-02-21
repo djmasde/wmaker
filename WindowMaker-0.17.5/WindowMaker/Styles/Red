@@ -1,0 +1,13 @@
+{
+FTitleColor = "white";
+PTitleColor = "white";
+UTitleColor = "black";
+MenuTitleColor = "white";
+MenuDisabledColor = "gray40";
+MenuTextColor = "black";
+FTitleBack = (hgradient, "#210005", "#900030");
+UTitleBack = (hgradient, "#808080", "#d0d0d0");
+PTitleBack = (hgradient, "#515055", "#808080");
+MenuTitleBack = (hgradient, "#900030", "#210005");
+MenuTextBack = (hgradient, "#d0d0d0", "#808080");
+}

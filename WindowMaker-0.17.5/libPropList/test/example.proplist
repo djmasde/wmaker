@@ -1,0 +1,14 @@
+{
+  TestArray = (
+    Black,
+    White,
+    Grey
+  );
+  TestString = "This is a funky test string.";
+  TestDict = {
+    Str1 = "Example String 1";
+    Str2 = "Example String 2";
+    Str3 = "Example String 3";
+  };
+  TestData = <0a0b0c0d0e0f10a0b0c0d0e0f0ffffff>;
+}

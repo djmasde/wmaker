@@ -1,0 +1,14 @@
+{
+FTitleColor = "white";
+PTitleColor = "white";
+UTitleColor = "black";
+MenuTitleColor = "white";
+MenuDisabledColor = "gray40";
+MenuTextColor = "black";
+MenuTextBack = (solid, "#aaaaaa");
+FTitleBack = (solid, black);
+UTitleBack = (solid, "#aaaaaa");
+PTitleBack = (solid, gray40);
+MenuTitleBack = (solid, black);
+MenuTextBack = (solid, "#aaaaaa");
+}

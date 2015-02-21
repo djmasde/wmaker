@@ -1,0 +1,50 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:553: checking for a BSD compatible install
+configure:606: checking whether build environment is sane
+configure:663: checking whether make sets ${MAKE}
+configure:709: checking for working aclocal
+configure:722: checking for working autoconf
+configure:735: checking for working automake
+configure:748: checking for working autoheader
+configure:761: checking for working makeinfo
+configure:779: checking for gcc
+configure:856: checking whether the C compiler (gcc  ) works
+configure:870: gcc -o conftest    conftest.c  1>&5
+configure:890: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:895: checking whether we are using GNU C
+configure:919: checking whether gcc accepts -g
+configure:947: checking how to run the C preprocessor
+configure:1013: checking for flex
+configure:1045: checking for flex
+configure:1078: checking for yywrap in -lfl
+configure:1120: checking lex output file root
+configure:1141: checking whether yytext is a pointer
+configure:1186: checking for bison
+configure:1216: checking whether make sets ${MAKE}
+configure:1245: checking for ranlib
+configure:1273: checking for ANSI C header files
+configure:1380: checking for fcntl.h
+configure:1380: checking for sys/file.h
+configure:1380: checking for sys/time.h
+configure:1380: checking for unistd.h
+configure:1380: checking for crypt.h
+configure:1418: checking for working const
+configure:1493: checking for pid_t
+configure:1526: checking for size_t
+configure:1559: checking whether time.h and sys/time.h may both be included
+configure:1595: checking for 8-bit clean memcmp
+configure:1631: checking return type of signal handlers
+configure:1675: checking for gethostname
+configure:1675: checking for gethostbyname
+configure:1675: checking for gettimeofday
+configure:1675: checking for mkdir
+configure:1675: checking for rmdir
+configure:1675: checking for select
+configure:1675: checking for strdup
+configure:1675: checking for strstr
+configure:1675: checking for socket
+configure:1730: checking for socket in -lsocket
+configure:1773: checking for gethostbyname in -lnsl
+configure:1815: checking for crypt in -lcrypt

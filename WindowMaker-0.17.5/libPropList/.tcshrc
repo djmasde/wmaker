@@ -1,0 +1,29 @@
+# .tcshrc
+
+# User specific aliases and functions
+
+alias rm 'rm -i'
+alias cp 'cp -i'
+alias mv 'mv -i'
+
+
+
+if ( $term == 'xterm' || $term == 'kterm' ) then
+	unset autologout
+	alias cd 'cd \!*; echo -n "]0;$cwd"'
+	echo -n "]0;$cwd"
+endif
+setenv PATH "/usr/sbin:/sbin:$HOME/bin:/usr/local/postgres95/bin:/usr/GNUstep/Production/Apps/i386_linux_gnu:$PATH"
+
+set prompt='[%n@%m %c]# ' 
+
+set autolist=ambiguous
+
+set nobeep
+setenv DISPLAY :0
+setenv EDITOR /bin/vi
+
+#limit coredumpsize 4M
+set autologout=120
+
+alias startx startx -- -bpp 16 -dpi 68

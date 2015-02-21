@@ -1,0 +1,14 @@
+o gsdd dies if WindowMaker dies (i.e. segfaults). Why is that?
+
+o Syntax errors in property-list files are still not handled too gracefully.  
+
+o There is no hashing whatsoever; searching is done on strcmp / memcmp 
+  basis. I don't know how to change this, though.
+
+
+o in "defaults write", non-alphabetic characters get ignored during parsing
+ex:
+	defaults write abcd abc+def
+
+o gsdd sends multiple repeated notifications for a single operation
+

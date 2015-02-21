@@ -1,0 +1,53 @@
+{
+  FTitleColor = black;
+  PTitleColor = white;
+  UTitleColor = gray20;
+  FTitleBack = (
+    mhgradient,
+    "#c02915",
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    black,
+    "#c02915",
+    yellow,
+    yellow,
+    "#c02915",
+    "#c02915"
+  );
+  PTitleBack = (hgradient, "#505050", "#808080");
+  UTitleBack = (hgradient, "#909090", "#d0d0d0");
+  MenuTitleColor = black;
+  MenuTextColor = black;
+  MenuDisabledColor = gray40;
+  MenuTitleBack = (
+    mhgradient,
+    "#c02915",
+    "#c02915",
+    yellow,
+    yellow,
+    "#c02915",
+    black,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white
+  );
+  MenuTextBack = (hgradient, "#d0d0d0", "#808080");
+}

@@ -1,0 +1,695 @@
+# WindowMaker french messages catalog
+# Copyright (C) 1997-1998 Free Software Foundation, Inc.
+# Jean-François Bignolles <bignolle@grif.fr>, 1998.
+# version initiale: 0.6.0
+# révision(s): 0.10.2, 0.15.1, 0.16.0
+#
+# Pas terrible comme traduction, «mais en attendant mieux»...
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WindowMaker 0.16.0\n"
+"POT-Creation-Date: 1998-07-02 23:02+0200\n"
+"PO-Revision-Date:  1998-07-04 13:30:34+0200\n"
+"Last-Translator: Jean-François Bignolles\n"
+"Language-Team: French \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO8859-1\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+msgid " fatal error: "
+msgstr " erreur fatale: "
+
+msgid " warning: "
+msgstr " avertissement: "
+
+msgid "could not read domain \"%s\" from defaults database"
+msgstr "impossible de lire les valeurs par défaut du domaine «%s»"
+
+msgid "can't convert \"%s\" to boolean for key \"%s\""
+msgstr "impossible de convertir «%s» en booléen pour la clé «%s»"
+
+msgid "using default \"%s\" instead"
+msgstr "utilisation par défaut de «%s»"
+
+msgid "can't convert \"%s\" to integer for key \"%s\""
+msgstr "impossible de convertir «%s» en entier pour la clé «%s»"
+
+msgid "Wrong option format for key \"%s\". Should be %s."
+msgstr "Mauvais format d'option pour la clé «%s». Devrait être %s."
+
+msgid "Incorrect number of elements in array for key \"%s\"."
+msgstr "Nombre incorrect d'éléments dans la table de la clé «%s»."
+
+msgid "Wrong value for key \"%s\". Should be Coordinate."
+msgstr "Valeur incorrecte pour la clé «%s». Devrait être une coordonnée."
+
+msgid "can't convert array to integers for \"%s\"."
+msgstr "impossible de convertir la table en entiers pour «%s»."
+
+msgid "Invalid focus mode \"%s\". Should be Manual, Auto or SemiAuto."
+msgstr "Mode de focus «%s» invalide. Devrait être Manual, Auto ou SemiAuto."
+
+msgid ""
+"Invalid window placement mode \"%s\". Should be Auto, Cascade, Random or "
+"Manual."
+msgstr ""
+"Mode de placement de fenêtre «%s» invalide. Devrait être Auto, Cascade, "
+"Random ou manual."
+
+msgid ""
+"Invalid geometry display type \"%s\". Should be Center, Corner, Floating or "
+"Line."
+msgstr ""
+"Type de géométrie d'affichage «%s» invalide. Devrait être Center, Corner, "
+"Floating ou Line."
+
+msgid "Invalid focus mode \"%s\". Should be Fast, Normal, Slow or UltraSlow."
+msgstr "Mode de focus «%s» invalide. Devrait être Fast, Normal, Slow"
+" or UltraSlow."
+
+msgid "could not parse color \"%s\""
+msgstr "impossible d'interpréter la couleur «%s»"
+
+msgid "bad number of arguments in gradient specification"
+msgstr "mauvais nombre d'arguments dans la spécification du dégradé"
+
+msgid "too few arguments in multicolor gradient specification"
+msgstr "trop peu d'arguments dans la spécification du dégradé multicolore"
+
+msgid "Error in texture specification for key \"%s\""
+msgstr "Erreur dans la spécification de texture pour la clé «%s»"
+
+msgid "Too few elements in array for key \"WorkspaceBack\"."
+msgstr "Trop peu d'éléments dans la table pour la clé «WorkspaceBack»."
+
+msgid "Wrong type for workspace background. Should be Texture."
+msgstr "Mauvais type pour le fond d'écran. Devrait être une texture"
+
+msgid "Cannot get color entry for key \"WorkspaceBack\"."
+msgstr "Impossible d'obtenir une couleur pour la clé «WorkspaceBack»."
+
+msgid "could not parse color \"%s\" for key \"WorkspaceBack\""
+msgstr "impossible d'interpréter la couleur «%s» pour la clé «WorkspaceBack»"
+
+msgid "Cannot get file entry for key \"WorkspaceBack\"."
+msgstr "Impossible d'obtenir un nom de fichier pour la clé «WorkspaceBack»."
+
+msgid "could not run \"%s\""
+msgstr "impossible d'exécuter «%s»"
+
+msgid "could not find background image \"%s\""
+msgstr "fichier d'icône «%s» introuvable"
+
+msgid "Error in texture specification for key \"WorkspaceBack\""
+msgstr "Erreur dans la spécification de texture pour la clé «%s»"
+
+msgid "Invalid justification type \"%s\". Should be Left, Center or Right"
+msgstr ""
+"Type de justification «%s» invalide. Devrait être Left, Center ou Right"
+
+msgid "could not load any usable font"
+msgstr "impossible de charger une fonte utilisable"
+
+msgid "could not get color for key \"%s\""
+msgstr "impossible d'obtenir la couleur pour la clé «%s»"
+
+msgid "invalid key modifier \"%s\""
+msgstr "modificateur de touche «%s» invalide"
+
+msgid "invalid kbd shortcut specification \"%s\""
+msgstr "spécification de raccourci-clavier «%s» invalide"
+
+msgid "invalid key in shortcut \"%s\""
+msgstr "touche invalide dans le raccourci-clavier «%s»"
+
+msgid "could not render texture for icon background"
+msgstr "impossible de rendre la texture de fond d'icône"
+
+msgid "could not render texture for workspace background"
+msgstr "impossible de rendre la texture de fond d'écran"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Exit"
+msgstr "Sortie"
+
+msgid "Could not open directory "
+msgstr "impossible d'ouvrir le répertoire"
+
+msgid "Error"
+msgstr "Erreur"
+
+msgid "Could not load image file "
+msgstr "impossible de charger le fichier d'image"
+
+msgid "Directories"
+msgstr "Répertoires"
+
+msgid "Icons"
+msgstr "Icônes"
+
+msgid "File Name:"
+msgstr "Nom du fichier:"
+
+msgid "Choose File"
+msgstr "Fichier choisi"
+
+msgid "Could not open specified icon file"
+msgstr "Impossible d'ouvrir le fichier d'icône spécifié"
+
+msgid "Dock Icon"
+msgstr "Icône du Dock"
+
+msgid "Enter command for the docked application:"
+msgstr "Entrez la commande pour l'application dockée:"
+
+msgid "Enter command for dropped objects:"
+msgstr "Entrez la commande pour les objets lachés:"
+
+msgid "Workspace Dock"
+msgstr "Dock du plan de travail"
+
+msgid "All selected icons will be removed!"
+msgstr "Tous les icônes sélectionnés seront supprimés!"
+
+msgid "could not create workspace submenu for Clip menu"
+msgstr "impossible de créer le sous-menu des plans de travail"
+" pour le menu Clip"
+
+msgid "could not create options submenu for Clip menu"
+msgstr "impossible de créer le sous-menu des options pour le menu Clip"
+
+msgid "Floating Clip"
+msgstr "Clip flottant"
+
+msgid "Collapsed"
+msgstr "Effondré"
+
+msgid "Auto Collapse"
+msgstr "Effondrement automatique"
+
+msgid "Attract Icons"
+msgstr "Attirer Icônes"
+
+msgid "Keep Attracted Icons"
+msgstr "Conserver Les Icônes Attirés"
+
+msgid "Clip Options"
+msgstr "Options Clip:"
+
+msgid "Floating Dock"
+msgstr "Dock flottant"
+
+msgid "Collect Icons"
+msgstr "Collecter Icônes"
+
+msgid "(Un)Select All Icons"
+msgstr "(Dé)Sélectionner Tous Les Icônes"
+
+msgid "Remove Selected Icons"
+msgstr "Supprimer Icônes Sélectionnés"
+
+msgid "Move To"
+msgstr "Déplacer Vers"
+
+msgid "Launch"
+msgstr "Lancement"
+
+msgid "Autolaunch"
+msgstr "Lancement automatique"
+
+msgid "Select"
+msgstr "Sélectionner"
+
+msgid "Set icon..."
+msgstr "Choisir icône..."
+
+msgid "Set arguments..."
+msgstr "Définir arguments..."
+
+msgid "Set drop arguments..."
+msgstr "Définir arguments du lâcher..."
+
+msgid "Kill"
+msgstr "Tuer"
+
+msgid "bad value in docked icon state info %s"
+msgstr "valeur incorrecte dans l'état d'un icône du Dock %s"
+
+msgid "bad value in docked icon position %i,%i"
+msgstr "position %i,%i d'icone du Dock incorrecte"
+
+msgid "there are too many icons stored in dock. Ignoring what doesn't fit"
+msgstr "le Dock contient trop d'icônes. Le surplus est ignoré"
+
+msgid "Command:"
+msgstr "Commande:"
+
+msgid "Could not execute command \"%s\""
+msgstr "Impossible d'exécuter la commande «%s»"
+
+msgid "stack overflow: too many dead processes"
+msgstr "débordement de pile: trop de processus morts"
+
+msgid "could not render gradient: %s"
+msgstr "impossible de rendre le dégradé: %s"
+
+msgid "error rendering image:%s"
+msgstr "échec de fabrication image: %s"
+
+msgid "could not find default icon \"%s\""
+msgstr "impossible de trouver l'icône par défaut «%s»"
+
+msgid "could not load default icon \"%s\""
+msgstr "impossible de charger l'icône par défaut «%s»"
+
+msgid "Restart failed!!!"
+msgstr "Échec redémarrage!!!"
+
+msgid "%s aborted.\n"
+msgstr "%s interrompu.\n"
+
+msgid "usage: %s [-options]\n"
+msgstr "usage: %s [-options]\n"
+
+msgid "options:"
+msgstr "options:"
+
+msgid " -nocpp \t\tdisable preprocessing of configuration files"
+msgstr " -nocpp \t\tdésactive le prétraitement des fichiers de configuration"
+
+msgid " -nodock\t\tdo not open the application Dock"
+msgstr " -nodock\t\tn'ouvre pas le Dock d'applications"
+
+msgid " -noclip\t\tdo not open the application Clip"
+msgstr " -noclip\t\tn'ouvre pas le Clip d'applications"
+
+msgid " -visualid visualid\tvisual id of visual to use"
+msgstr " -visualid visualid\t«visual» à utiliser"
+
+msgid " -display host:dpy\tdisplay to use"
+msgstr " -display host:dpy\t«display» à utiliser"
+
+msgid " -version\t\tprint version and exit"
+msgstr " -version\t\taffiche la version et sort"
+
+msgid "could not determine home directory"
+msgstr "impossible de déterminer le répertoire de l'utilisateur"
+
+msgid ""
+"could not find user GNUstep directory.\n"
+"Make sure you have installed WindowMaker correctly and run wmaker.inst"
+msgstr ""
+"impossible de trouver le répertoire GNUstep de l'utilisateur.\n"
+"Assurez-vous d'avoir installé WindowMaker correctement et lancez wmaker.inst"
+
+msgid "%s:could not execute initialization script"
+msgstr "%s: impossible d'exécuter le script d'initialisation"
+
+msgid "too few arguments for %s"
+msgstr "trop peu d'arguments pour %s"
+
+msgid "bad value for visualid: \"%s\""
+msgstr "mauvaise valeur pour le «visualid»: «%s»"
+
+msgid "X server does not support locale"
+msgstr "le serveur X ne supporte pas la localisation"
+
+msgid "cannot set locale modifiers"
+msgstr "impossible d'affecter les réglages de localisation"
+
+msgid "could not open display \"%s\""
+msgstr "impossible d'ouvrir le «display» %s"
+
+msgid "wrealloc() failed while trying to add menu item"
+msgstr "échec de wrealloc() lors d'une tentative d'ajout d'élément de menu"
+
+msgid "could not define value for %s for cpp"
+msgstr "impossible de définir la valeur de %s pour cpp"
+
+msgid "could not get password entry for UID %i"
+msgstr "impossible d'accéder aux informations sur l'utilisateur d'UID %i"
+
+msgid "your machine is misconfigured. HOSTNAME is set to %s"
+msgstr "votre machine est mal configurée. HOSTNAME vaut %s"
+
+msgid "your machine is misconfigured. HOST is set to %s"
+msgstr "votre machine est mal configurée. HOST vaut %s"
+
+msgid "could not find icon file \"%s\""
+msgstr "fichier d'icône «%s» introuvable"
+
+msgid "selection timed-out"
+msgstr "fin temporisation de la sélection"
+
+msgid "Program Arguments"
+msgstr "Arguments du programme:"
+
+msgid "Enter command arguments:"
+msgstr "Entrez les arguments de la commande:"
+
+msgid "unable to get dropped data from DND drop"
+msgstr "impossible de récuperer les données du glisser-lâcher"
+
+msgid "error getting dropped data from DND drop"
+msgstr "erreur récupération données du glisser-lâcher"
+
+msgid "out of memory while getting data from DND drop"
+msgstr "épuisement mémoire en fin de glisser-lâcher"
+
+msgid "out of memory during expansion of \"%s\""
+msgstr "épuisement mémoire lors de l'expansion de «%s»"
+
+msgid "out of memory during expansion of \"%w\""
+msgstr "épuisement mémoire lors de l'expansion de «%w»"
+
+msgid "out of memory during expansion of \"%a\""
+msgstr "épuisement mémoire lors de l'expansion de «%a»"
+
+msgid "out of memory during expansion of \"%d\""
+msgstr "épuisement mémoire lors de l'expansion de «%d»"
+
+msgid "selection not available"
+msgstr "sélection indisponible"
+
+msgid "bad window name value in %s state info"
+msgstr "nom de fenêtre incorrect dans l'état de %s"
+
+msgid "could not load mask bitmap file \"%s\". Won't use mask"
+msgstr "impossible de charger le fichier de masque «%s»."
+" Aucun masque ne sera utilisé"
+
+msgid "The following character sets are missing:"
+msgstr "Les ensembles de caractères suivants manquent:"
+
+msgid "The string \"%s\" will be used in place"
+msgstr "La chaîne «%s» sera utilisée à la place"
+
+msgid "of any characters from those sets."
+msgstr "des caractères de ces ensembles."
+
+msgid "could not create font set %s. Trying fixed"
+msgstr "impossible de créer la fonte %s. Essai de fixed"
+
+msgid "could not load font %s. Trying fixed"
+msgstr "impossible de charger la fonte %s. Essai de fixed"
+
+msgid "could not allocate color \"%s\""
+msgstr "impossible d'allouer la couleur «%s»"
+
+msgid "Program \"%s\" not found or cannot be executed."
+msgstr "Le programme «%s» ne peut être trouvé ou exécuté"
+
+msgid "Exit window manager?"
+msgstr "Quitter le gestionnaire de fenêtres?"
+
+msgid "Close X session"
+msgstr "Terminer session X"
+
+msgid "Close Window System session?\n"
+"(all applications will be closed)"
+msgstr "Terminer la session X?\n"
+"(toutes les applications seront fermées)"
+
+msgid "Exiting...\n"
+msgstr "Sortie...\n"
+
+msgid "%s: unmatched '\"' in menu file"
+msgstr "%s: caractère '\"' non apparié dans le fichier de menu"
+
+msgid "%s: missing command"
+msgstr "%s: commande manquante"
+
+msgid "invalid OPEN_MENU specification: %s"
+msgstr "spécification OPEN_MENU invalide: %s"
+
+msgid "%s:could not stat menu"
+msgstr "%s: échec de stat() pour le menu"
+
+msgid "%s:could not stat menu :%s"
+msgstr "%s: échec de stat() pour le menu: %s"
+
+msgid "too many parameters in OPEN_MENU: %s"
+msgstr "trop de paramétres pour OPEN_MENU: %s"
+
+msgid "%s:missing parameter for menu command \"%s\""
+msgstr "%s: paramêtre manquant pour la commande de menu «%s»"
+
+msgid "%s:unknown command \"%s\" in menu config."
+msgstr "%s: commande inconnue «%s» dans configuration menu."
+
+msgid "%s:maximal line size exceeded in menu config: %s"
+msgstr "%s: ligne trop longue dans configuration menu: %s"
+
+msgid "%s:missing command in menu config: %s"
+msgstr "%s: commande manquante dans configuration menu: %s"
+
+msgid "%s:syntax error in menu file:END declaration missing"
+msgstr "%s: erreur de syntaxe dans le fichier de menu: END absent"
+
+msgid "could not make arguments for menu file preprocessor"
+msgstr "impossible de créer les arguments pour le préprocesseuri"
+" de fichier de menu"
+
+msgid "%s:could open/preprocess menu file"
+msgstr "%s: impossible d'ouvrir/de prétraiter le fichier de menu"
+
+msgid "%s:could not open menu file"
+msgstr "%s: impossible d'ouvrir le fichier de menu"
+
+msgid "%s:syntax error in menu config: %s"
+msgstr "%s: erreur de syntaxe dans la configuration du menu: %s"
+
+msgid "%s:no title given for the root menu"
+msgstr "%s: aucun titre n'est donné au menu principal"
+
+msgid "%s:syntax error in menu config. %s"
+msgstr "%s: erreur de syntaxe dans la configuration du menu. %s"
+
+msgid "out of memory while constructing directory menu %s"
+msgstr "épuisement mémoire lors de la construction du menu répertoire %s"
+
+msgid "%s:could not stat file \"%s\" in menu directory"
+msgstr "%s: échec de stat() pour le fichier «%s» dans le répertoire du menu"
+
+msgid "Commands"
+msgstr "Commandes"
+
+msgid "Exit..."
+msgstr "Sortie..."
+
+msgid "%s:could not find menu file \"%s\""
+msgstr "%s: impossible de trouver le fichier de menu «%s»"
+
+msgid "%s:could not stat menu \"%s\""
+msgstr "%s: échec de stat() pour le menu «%s»"
+
+msgid "%s:format error in root menu configuration \"%s\""
+msgstr "%s: erreur de format dans la configuration du menu «%s»"
+
+msgid "it seems that there already is a window manager running"
+msgstr "il semblerait qu'un gestionnaire de fenêtres fonctionne déja"
+
+msgid "could not load logo image for panels"
+msgstr "impossible de charger un logo pour les panneaux"
+
+msgid "error making logo image for panel:%s"
+msgstr "échec création logo pour le panneau: %s"
+
+msgid "could not initialize graphics library context: %s"
+msgstr "initialisation contexte bibliothèque graphique impossible: %s"
+
+msgid "could not get window list!!"
+msgstr "impossible d'obtenir la liste des fenêtres!!"
+
+msgid "internal X error: %s\n"
+msgstr "erreur X interne: %s\n"
+
+msgid "got signal %i (%s) - restarting\n"
+msgstr "signal %i reçu (%s) - redémarrage\n"
+
+msgid "got signal %i - restarting\n"
+msgstr "signal %i reçu (%s) - redémarrage\n"
+
+msgid "got signal %i (%s)\n"
+msgstr "signal %i reçu (%s)\n"
+
+msgid "got signal %i\n"
+msgstr "signal %i reçu\n"
+
+msgid "trying to start alternative window manager..."
+msgstr "essai de lancement d'un autre gestionnaire de fenêtres..."
+
+msgid "Windows"
+msgstr "Fenêtres"
+
+msgid "image file \"%s\" used as texture could not be found."
+msgstr "le fichier d'image «%s» utilisé comme texture est introuvable."
+
+msgid "could not load texture pixmap \"%s\":%s"
+msgstr "impossible de charger la texture «%s»: %s"
+
+msgid "could not render texture: %s"
+msgstr "impossible de rendre la texture: %s"
+
+msgid "can't convert \"%s\" to boolean"
+msgstr "conversion de «%s» vers booléen impossible"
+
+msgid "could not create workspace submenu for window menu"
+msgstr "impossible de créer le menu listant les plans de travail"
+
+msgid "(Un)Maximize"
+msgstr "(Dé)Maximiser"
+
+msgid "Miniaturize"
+msgstr "Miniaturiser"
+
+msgid "(Un)Shade"
+msgstr "(Dé)Plier"
+
+msgid "Hide"
+msgstr "Cacher"
+
+msgid "Hide Others"
+msgstr "Cacher les autres"
+
+msgid "Attributes..."
+msgstr "Attributs..."
+
+msgid "Close"
+msgstr "Fermer"
+
+msgid "Could not find specified icon file"
+msgstr "Impossible de trouver le fichier d'icône spécifié"
+
+msgid "not enough memory to open window inspector panel"
+msgstr "pas assez de mémoire pour ouvrir le panneau d'inspection"
+
+msgid "Save"
+msgstr "Sauver"
+
+msgid "Apply"
+msgstr "Appliquer"
+
+msgid "Revert"
+msgstr "Défaire"
+
+msgid "Window Specification"
+msgstr "Spécification fenêtre"
+
+msgid "Window Attributes"
+msgstr "Attributs de fenêtre"
+
+msgid "Advanced Options"
+msgstr "Options Avancées"
+
+msgid "Icon and Initial Workspace"
+msgstr "Icône et Plan de travail initiaux"
+
+msgid "Defaults for all windows"
+msgstr "Valeurs-défaut pour toutes les fenêtres"
+
+msgid ""
+"The configuration will apply to all\n"
+"windows that have their WM_CLASS property set to the above selected\n"
+"name, when saved."
+msgstr ""
+"La configuration s'appliquera à l'ensemble des fenêtres ayant\n"
+"la propriété WM_CLASS positionnée à la valeur sélectionnée\n"
+"ci-dessus, au moment de la sauvegarde."
+
+msgid "Attributes"
+msgstr "Attributs"
+
+msgid "Disable titlebar"
+msgstr "Pas de barre de titre"
+
+msgid "Disable resizebar"
+msgstr "Pas de barre de redimensionnement"
+
+msgid "Not closable"
+msgstr "Non fermable"
+
+msgid "Not miniaturizable"
+msgstr "Non miniaturisable"
+
+msgid "Keep on top"
+msgstr "Conserver au premier plan"
+
+msgid "Omnipresent"
+msgstr "Omniprésente"
+
+msgid "Don't let it take focus"
+msgstr "Empêcher la prise du focus"
+
+msgid "Skip window list"
+msgstr "Éviter liste des fenêtres"
+
+msgid "Advanced"
+msgstr "Avancé"
+
+msgid "Ignore HideOthers"
+msgstr "Ignorer «HideOthers»"
+
+msgid "Don't bind keyboard shortcuts"
+msgstr "Ne pas assigner les raccourcis-clavier"
+
+msgid "Don't bind mouse clicks"
+msgstr "Ne pas assigner les boutons de la souris"
+
+msgid "Keep inside screen"
+msgstr "Garder dans l'écran"
+
+msgid "No application icon"
+msgstr "Pas d'icône d'application"
+
+msgid "Start Miniaturized"
+msgstr "Démarrer Miniaturisé"
+
+msgid "Start Hidden"
+msgstr "Démarrer Caché"
+
+msgid "Don't Save Session"
+msgstr "Ne pas Sauver la Session"
+
+msgid "Miniwindow Image"
+msgstr "Image Minifenêtre"
+
+msgid "Browse"
+msgstr "Explorer"
+
+msgid "Update"
+msgstr "Mettre à jour"
+
+msgid "Icon file name:"
+msgstr "Nom du fichier d'icône:"
+
+msgid "Ignore client supplied icon"
+msgstr "Ignorer l'icône du client"
+
+msgid "Initial Workspace"
+msgstr "Plan de travail initial"
+
+msgid "Nowhere in particular"
+msgstr "pas d'emplacement particulier"
+
+msgid "Workspace %i"
+msgstr "Plan de travail %i"
+
+msgid "Workspaces"
+msgstr "Plans de travail"
+
+msgid "could not create Workspace menu"
+msgstr "impossible de créer le menu listant les plans de travail"
+
+msgid "New"
+msgstr "Nouveau"
+
+msgid "Destroy Last"
+msgstr "Supprimer le dernier"
+

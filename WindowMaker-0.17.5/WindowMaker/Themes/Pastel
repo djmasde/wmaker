@@ -1,0 +1,28 @@
+{
+  TitleJustify = left;
+  WindowTitleFont = "-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+  MenuTitleFont = "-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+  MenuTextFont = "-*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*";
+  IconTitleFont = "-*-helvetica-medium-r-normal-*-8-*-*-*-*-*-*-*";
+  ClipTitleFont = "-*-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*";
+  DisplayFont = "-*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*";
+  HighlightColor = white;
+  HighlightTextColor = black;
+  ClipTitleColor = "#a0a0a0";
+  CClipTitleColor = "#616161";
+  AClipColor = "#38f830";
+  IClipColor = "#008000";
+  FTitleColor = white;
+  PTitleColor = white;
+  UTitleColor = "#7996cf";
+  FTitleBack = (mhgradient, "#182c70", "#182c70", "#4969c7", "#79a2d0", "#96c7be");
+  PTitleBack = (hgradient, "#081838", "#283c49");
+  UTitleBack = (mhgradient, "#182c41", "#182c41", "#081838", "#283c49", "#284530");
+  MenuTitleColor = "#102851";
+  MenuTextColor = "#103038";
+  MenuDisabledColor = gray;
+  MenuTitleBack = (mhgradient, black, "#285541", "#93d7d5", "#96d7e7");
+  MenuTextBack = (mhgradient, "#182c70", "#284596", "#79a2d0", "#96c7be");
+  WorkspaceBack = (solid, "#243e6c");
+  IconBack = (mdgradient, "#183454", "#284569", "#082420");
+}

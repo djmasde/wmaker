@@ -1,0 +1,6 @@
+This directory contains tools I use in debugging / developing libPropList.
+
+	findleak.tcl: fast hack-and-slash Tcl script to parse malloc-
+                      debugging output
+
+

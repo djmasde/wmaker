@@ -1,0 +1,29 @@
+{
+  NewStyle = YES;
+  TitleJustify = left;
+  WindowTitleFont = "-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+  MenuTitleFont = "-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+  MenuTextFont = "-*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*";
+  IconTitleFont = "-*-helvetica-medium-r-normal-*-8-*-*-*-*-*-*-*";
+  ClipTitleFont = "-*-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*";
+  DisplayFont = "-*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*";
+  HighlightColor = white;
+  HighlightTextColor = black;
+  ClipTitleColor = black;
+  CClipTitleColor = "#616161";
+  AClipColor = "#38f830";
+  IClipColor = "#008000";
+  FTitleColor = white;
+  PTitleColor = white;
+  UTitleColor = gray20;
+  FTitleBack = (dgradient, "#000010", "#202070");
+  PTitleBack = (dgradient, "#505050", "#808080");
+  UTitleBack = (dgradient, "#909090", "#d0d0d0");
+  MenuTitleColor = white;
+  MenuTextColor = black;
+  MenuDisabledColor = gray40;
+  MenuTitleBack = (dgradient, "#000020", "#202070");
+  MenuTextBack = (hgradient, "#d0d0d0", "#808080");
+  WorkspaceBack = (tpixmap, "BlueImage.jpeg", black);
+  IconBack = (dgradient, "#a6a6b6", "#515561");
+}

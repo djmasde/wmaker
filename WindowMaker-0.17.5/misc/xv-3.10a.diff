@@ -1,0 +1,320 @@
+Common subdirectories: xv-3.10a/.xvpics and xv-3.10awm/.xvpics
+Common subdirectories: xv-3.10a/bits and xv-3.10awm/bits
+Common subdirectories: xv-3.10a/docs and xv-3.10awm/docs
+Common subdirectories: xv-3.10a/jpeg and xv-3.10awm/jpeg
+Common subdirectories: xv-3.10a/tiff and xv-3.10awm/tiff
+Common subdirectories: xv-3.10a/unsupt and xv-3.10awm/unsupt
+Common subdirectories: xv-3.10a/vms and xv-3.10awm/vms
+diff -cN xv-3.10a/wmaker.h xv-3.10awm/wmaker.h
+*** xv-3.10a/wmaker.h	Wed Dec 31 21:00:00 1969
+--- xv-3.10awm/wmaker.h	Wed Jun 18 20:51:28 1997
+***************
+*** 0 ****
+--- 1,74 ----
++ /* 
++  *  WindowMaker window manager interface
++  * 
++  *  Copyright (c) 1997 Alfredo K. Kojima
++  */
++ 
++ 
++ #ifndef WMAKER_H_
++ #define WMAKER_H_
++ 
++ #include <X11/Xproto.h>
++ 
++ #define GNUSTEP_WM_ATTR_NAME  "_GNUSTEP_WM_ATTR"
++ 
++ /* window stacking level */
++ enum {
++   NSNormalWindowLevel   = 0,
++   NSFloatingWindowLevel  = 3,
++   NSDockWindowLevel   = 5,
++   NSSubmenuWindowLevel  = 10,
++   NSMainMenuWindowLevel  = 20
++ };
++ 
++ /* window attributes */
++ enum {
++   NSBorderlessWindowMask = 0,
++   NSTitledWindowMask = 1,
++   NSClosableWindowMask = 2,
++   NSMiniaturizableWindowMask = 4,
++   NSResizableWindowMask = 8
++ };
++ 
++ 
++ /* GNUstep protocols atom names */
++ #define GNUSTEP_WM_MINIATURIZE_WINDOW "_GNUSTEP_WM_MINIATURIZE_WINDOW"
++ #define GNUSTEP_WM_RESIZEBAR "_GNUSTEP_WM_RESIZEBAR"
++ 
++ typedef struct {
++     CARD32 flags;
++     CARD32 window_style;
++     CARD32 window_level;
++     CARD32 reserved;
++     Pixmap miniaturize_pixmap;	       /* pixmap for miniaturize button */
++     Pixmap close_pixmap;	       /* pixmap for close button */
++     Pixmap miniaturize_mask;	       /* miniaturize pixmap mask */
++     Pixmap close_mask;		       /* close pixmap mask */
++     CARD32 extra_flags;
++ } GNUstepWMAttributes;
++ 
++ #define GSWindowStyleAttr 	(1<<0)
++ #define GSWindowLevelAttr 	(1<<1)
++ #define GSMiniaturizePixmapAttr	(1<<3)
++ #define GSClosePixmapAttr	(1<<4)
++ #define GSMiniaturizeMaskAttr	(1<<5)
++ #define GSCloseMaskAttr		(1<<6)
++ #define GSExtraFlagsAttr       	(1<<7)
++ 
++ 
++ 
++ #define GSClientResizeFlag	(1<<0)
++ #define GSFullKeyboardEventsFlag (1<<1)
++ #define GSMenuWindowFlag	(1<<2)
++ #define GSIconWindowFlag	(1<<3)
++ 
++ #define GSDarkGrayTitlebarFlag	(1<<8)
++ 
++ 
++ #define GNUSTEP_WM_FUNCTION "_GNUSTEP_WM_FUNCTION"
++ 
++ #define GSFHideOtherApplications	10
++ #define GSFHideApplication		12
++ #define GSFFocusWindow			20
++ 
++ #endif
+diff -cN xv-3.10a/xv.c xv-3.10awm/xv.c
+*** xv-3.10a/xv.c	Thu Jan 19 16:08:43 1995
+--- xv-3.10awm/xv.c	Wed Jun 18 21:28:14 1997
+***************
+*** 10,15 ****
+--- 10,17 ----
+  
+  #include "xv.h"
+  
++ #include <unistd.h>
++ 
+  #include "bits/icon"
+  #include "bits/iconmask"
+  #include "bits/runicon"
+***************
+*** 688,694 ****
+      novbrowse = 1;
+    }
+    
+!   
+    /* create the info box window */
+    CreateInfo(infogeom);
+    XSelectInput(theDisp, infoW, ExposureMask | ButtonPressMask | KeyPressMask
+--- 690,718 ----
+      novbrowse = 1;
+    }
+    
+! 
+!     {
+! 	char argv0[256];
+! 	XClassHint classh;
+! 	
+! 	/* clean-up relative paths */
+! 	if (*mainargv[0]=='.') {
+! 	    if (getcwd(argv0, 255)) {
+! 		strcat(argv0,strrchr(mainargv[0],'/'));
+! 		mainargv[0]=(char*)argv0;
+! 	    }
+! 	} /*else if (mainargv[0]=='~') {
+! 	    
+! 	}*/
+! 	
+! 	/* create permanent main window for WindowMaker */
+! 	mainWM = None;
+! 	mainWM = CreateWindow("XV", "XV", "+1+1", 1, 1, False, 0, 0);
+! 	XSetCommand(theDisp, mainWM, mainargv, mainargc);
+! 	classh.res_name = "xv";
+! 	classh.res_class = "XV";
+! 	XSetClassHint(theDisp, mainWM, &classh);
+!     }
+    /* create the info box window */
+    CreateInfo(infogeom);
+    XSelectInput(theDisp, infoW, ExposureMask | ButtonPressMask | KeyPressMask
+***************
+*** 3273,3279 ****
+  
+    xwmh.input = True;
+    xwmh.flags = InputHint;
+- 
+    xwmh.icon_pixmap = iconPix;  
+    xwmh.icon_mask   = iconmask;  
+    xwmh.flags |= (IconPixmapHint | IconMaskHint);
+--- 3297,3302 ----
+***************
+*** 3295,3300 ****
+--- 3318,3325 ----
+        }
+      }
+    }
++   xwmh.flags |= WindowGroupHint;
++   xwmh.window_group = mainWM;
+    XSetWMHints(theDisp, mainW, &xwmh);
+  
+    classh.res_name = "xv";
+***************
+*** 3776,3781 ****
+--- 3801,3808 ----
+  	xwmh.flags |= ( IconPixmapHint | IconMaskHint) ;
+  
+  	xwmh.flags |= StateHint;
++ 	xwmh.flags |= WindowGroupHint;
++ 	xwmh.window_group = mainWM;
+  	XSetWMHints(theDisp, mainW, &xwmh);
+  
+  	oldXwa.width = eWIDE;  oldXwa.height = eHIGH;
+diff -cN xv-3.10a/xv.h xv-3.10awm/xv.h
+*** xv-3.10a/xv.h	Mon Jan 23 18:22:23 1995
+--- xv-3.10awm/xv.h	Tue Apr 15 19:36:07 1997
+***************
+*** 949,954 ****
+--- 949,957 ----
+  WHERE int           showzoomcursor;
+  WHERE u_long        xorMasks[8];
+  
++ /* WindowMaker stuff */
++ WHERE Window mainWM;
++ 
+  /* XV global vars */
+  WHERE byte          *pic;                   /* ptr to loaded picture */
+  WHERE int            pWIDE,pHIGH;           /* size of 'pic' */
+diff -cN xv-3.10a/xvmisc.c xv-3.10awm/xvmisc.c
+*** xv-3.10a/xvmisc.c	Fri Jan 13 21:41:34 1995
+--- xv-3.10awm/xvmisc.c	Tue Apr 15 20:31:18 1997
+***************
+*** 139,146 ****
+    XSetStandardProperties(theDisp, win, name, name, None, NULL, 0, &hints);
+  
+    xwmh.input = True;
+!   xwmh.flags = InputHint;
+!   if (iconPix) { xwmh.icon_pixmap = iconPix;  xwmh.flags |= IconPixmapHint; }
+    XSetWMHints(theDisp, win, &xwmh);
+  
+    if (clname && strlen(clname)) {
+--- 139,152 ----
+    XSetStandardProperties(theDisp, win, name, name, None, NULL, 0, &hints);
+  
+    xwmh.input = True;
+!   xwmh.flags = InputHint|WindowGroupHint;
+!   if (mainWM == None)
+!       mainWM = win;
+!   xwmh.window_group = mainWM;
+!   if (iconPix) { 
+!       xwmh.icon_pixmap = iconPix;  xwmh.flags |= IconPixmapHint;
+!       xwmh.icon_mask = iconPix;  xwmh.flags |= IconMaskHint;
+!   }
+    XSetWMHints(theDisp, win, &xwmh);
+  
+    if (clname && strlen(clname)) {
+***************
+*** 149,155 ****
+      XSetClassHint(theDisp, win, &classh);
+      StoreDeleteWindowProp(win);
+    }
+- 
+    return(win);
+  }
+    
+--- 155,160 ----
+***************
+*** 633,641 ****
+      time(&lastwaittime);
+      waiting=1;
+      xwmh.input       = True;
+!     xwmh.icon_pixmap = riconPix;  
+!     xwmh.icon_mask   = riconmask;  
+!     xwmh.flags = (InputHint | IconPixmapHint | IconMaskHint) ;
+      if (!useroot && mainW) XSetWMHints(theDisp, mainW, &xwmh);
+      if ( useroot && ctrlW) XSetWMHints(theDisp, ctrlW, &xwmh);
+    }
+--- 638,648 ----
+      time(&lastwaittime);
+      waiting=1;
+      xwmh.input       = True;
+!     xwmh.icon_pixmap = riconPix;
+!     xwmh.icon_mask   = riconmask;
+!     xwmh.window_group = mainWM;
+!     xwmh.flags = (InputHint | IconPixmapHint | IconMaskHint | WindowGroupHint);
+! 
+      if (!useroot && mainW) XSetWMHints(theDisp, mainW, &xwmh);
+      if ( useroot && ctrlW) XSetWMHints(theDisp, ctrlW, &xwmh);
+    }
+***************
+*** 666,673 ****
+        waiting=0;
+        xwmh.input       = True;
+        xwmh.icon_pixmap = iconPix;  
+!       xwmh.icon_mask   = iconmask;  
+!       xwmh.flags = (InputHint | IconPixmapHint | IconMaskHint) ;
+        if (!useroot && mainW) XSetWMHints(theDisp, mainW, &xwmh);
+        if ( useroot && ctrlW) XSetWMHints(theDisp, ctrlW, &xwmh);
+      }
+--- 673,681 ----
+        waiting=0;
+        xwmh.input       = True;
+        xwmh.icon_pixmap = iconPix;  
+!       xwmh.icon_mask   = iconmask;
+!       xwmh.window_group = mainWM;
+!       xwmh.flags = (InputHint | IconPixmapHint | IconMaskHint | WindowGroupHint);
+        if (!useroot && mainW) XSetWMHints(theDisp, mainW, &xwmh);
+        if ( useroot && ctrlW) XSetWMHints(theDisp, ctrlW, &xwmh);
+      }
+diff -cN xv-3.10a/xvpopup.c xv-3.10awm/xvpopup.c
+*** xv-3.10a/xvpopup.c	Thu Jan 19 16:09:31 1995
+--- xv-3.10awm/xvpopup.c	Sat Apr 26 00:46:17 1997
+***************
+*** 20,25 ****
+--- 20,27 ----
+  
+  #include "xv.h"
+  
++ #include "wmaker.h"
++ 
+  #include "bits/icon"
+  
+  #define PUWIDE 400
+***************
+*** 232,243 ****
+      XMapWindow(theDisp, padODial.win);
+    }      
+    
+- 
+    XResizeWindow(theDisp, popW, (u_int) puwide, (u_int) puhigh);
+    XStoreName   (theDisp, popW, wname);
+    XSetIconName (theDisp, popW, wname);
+    attachPUD();
+  
+    bts = (BUTT *) malloc(n * sizeof(BUTT));
+    if (!bts) FatalError("unable to malloc buttons in popup\n");
+    nbts = n;
+--- 234,256 ----
+      XMapWindow(theDisp, padODial.win);
+    }      
+    
+    XResizeWindow(theDisp, popW, (u_int) puwide, (u_int) puhigh);
+    XStoreName   (theDisp, popW, wname);
+    XSetIconName (theDisp, popW, wname);
+    attachPUD();
+  
++     {
++ 	GNUstepWMAttributes attr;
++ 	Atom gs_attr = XInternAtom(theDisp, GNUSTEP_WM_ATTR_NAME, False);
++ 
++ 	memset(&attr, 0, sizeof(GNUstepWMAttributes));
++ 	attr.flags = GSWindowLevelAttr | GSWindowStyleAttr;
++ 	attr.window_level = NSFloatingWindowLevel;
++ 	attr.window_style= NSTitledWindowMask;
++ 	XChangeProperty(theDisp, popW, gs_attr, gs_attr,
++ 			32, PropModeReplace,  (unsigned char *)&attr,
++ 			sizeof(GNUstepWMAttributes)/sizeof(CARD32));
++     }
+    bts = (BUTT *) malloc(n * sizeof(BUTT));
+    if (!bts) FatalError("unable to malloc buttons in popup\n");
+    nbts = n;

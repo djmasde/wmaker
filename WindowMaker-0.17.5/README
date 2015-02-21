@@ -1,0 +1,131 @@
+
+		WindowMaker X11 Window Manager
+
+	  	   <http://windowmaker.org>
+		 <ftp://ftp.windowmaker.org>
+
+
+		      Alfredo K. Kojima 
+		   <kojima@windowmaker.org>
+		    <kojima@inf.ufrgs.br>
+
+			  Dan Pascu
+		    <dan@windowmaker.org>
+
+		       Matthew Hawkins
+		    <matt@windowmaker.org>
+
+Description
+===========
+
+WindowMaker is a window manager designed to emulate the look and feel of
+part of the NEXTSTEP(tm) GUI. It's supposed to be relatively fast and small,
+feature rich, easy to configure and easy to use, with a simple and elegant
+appearance borrowed from NEXTSTEP(tm).
+
+
+Directories & Files
+===================
+
+o INSTALL contains installation instructions and some troubleshooting tips.
+
+o Install is a script for configuring and compiling WindowMaker in a easy
+way.
+
+o ChangeLog contains the changes since the last version
+
+o BUGS contains a list of the currently known bugs
+
+o FAQ is a list of frequently asked questions.
+
+o NEWS is a list of user visible changes since the last version. Read it if
+you are upgrading.
+
+o wmlib/ contains the library necessary to write applications that use
+WindowMaker specific features, like application defined menus. This library
+will be merged into WINGs in the future.
+
+o WINGs/ contain the WINGs (WINGs Is Not GNUstep) tiny widget library. It is
+used by wmaker, but can be used by standalone programs as well.
+
+o test/ contains a simple test program that shows some of the things that can
+be done with WindowMaker and wmlib
+
+o wrlib/ contains the library used to do image manipulation (loading,
+dithering etc.) in WindowMaker. It can be used in other applications.
+
+o util/ contains various utility programs.
+
+o Configuration options can be found in the ~/GNUstep/Defaults/* files
+(after installation). The menus can be configured in
+~/GNUstep/Library/WindowMaker/menu
+
+o The default configuration files for the system are installed by default in
+/usr/local/share/WindowMaker, along with some other data files.
+
+o src/wconfig.h contains various compile time options you can change to
+select some options/features and things like the path for configuration
+directory.
+
+o BUGFORM is a form you should fill to send a bugreport. Please use the
+form. It makes things easier to me and ensures that you give me a reasonable
+amount of information.
+
+
+
+Mailing List
+============
+
+There is a mailing list for discussing WindowMaker at
+wmaker@linuxcenter.com To subscribe to it, send a message containing:
+	subscribe 
+in the subject and the body of the message to wmaker-request@linuxcenter.com
+
+If you have some problem installing or using wmaker, it would be advisable
+to ask in the mailing list, as the probability of at least one of the 500+
+users there having the same problem as you (and solving it) is bigger than
+the three of us. The developers are subscribed to the mailing list, so we
+will read your post anyway.
+
+
+Copyrights
+==========
+
+WindowMaker is copyrighted by Alfredo K. Kojima and is licensed through the
+GNU General Public License. Read the COPYING file for the complete license.
+
+NeXT, OpenStep and NEXTSTEP are a trademarks of NeXT Computer, Inc.
+
+Some portions of this program (notably colormap.c) were taken from fvwm,
+which is Copyright (c) Robert Nation and others.
+
+
+Authors
+=======
+
+The AUTHORS file contains a list of the people who have contributed to the
+project. The name of people who have helped with localization (translation)
+can be found in po/README and WindowMaker/README
+
+If you have any comments, fixes and bug reports (filled BUGFORMs) send them
+to kojima@windowmaker.org
+
+
+Musicware
+=========
+
+If you use WindowMaker and *really* like it, please consider making my day
+by sending me a music CD (or a MiniDisc) of your favorite band, singer,
+instrumentist, composer or whatever :^). I like listening to music and would
+love to get new CDs, especially from other parts of the world. I like almost
+any kind of music, from Ozzy Ozbourne to Bach (mas não pagode e sertanejo
+pelamordideus :), so I will be happy to receive just about anything.
+
+Snail mail address:
+
+Alfredo Kengi Kojima
+Rua Firmino O. Bimbi, 255/25B
+Porto Alegre - RS
+CEP 91751-330
+Brazil
+

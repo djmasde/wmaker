@@ -1,0 +1,212 @@
+
+This FAQ is outdated. You can find a more extensive WindowMaker FAQ
+at http://www.dpo.uab.edu/~grapeape/wmfaq.html or
+http://wm.gnu.net/faq/
+
+Summary:
+- General Information.
+- I18N support does not work. 
+- Netscape is not refreshed correctly. 
+- Why some apps, like Netscape, can't be docked like others? 
+- How do I dock asclock?
+- What are the bullet-hole icons?
+- When I dock asclock, wmload or whatever and restart a bullet-hole 
+	icon appears.
+- What are the 3 dots on the dock buttons?	
+- But they don't disappear when I launch xyz!!!
+- Is there a ASCP like control panel for WindowMaker? 
+- How do I swallow clock, xload etc.?
+- function key bindings don't work
+- How do I assign different icons to xterms?
+
+- General Information.
+
+	There is a mailing list for discussing WindowMaker. To subscribe, 
+	send a message containing the word subscribe to 
+	wmaker-request@eosys.com
+
+	If you have some bug report, please send me a detailed description
+	of the bug and some information about your system (OS, X server,
+	WindowMaker version etc.). In the util directory, there is a
+	script called bughint that gathers information about your system. 
+	Run it from a xterm and send the output file to me.
+	Unclear bug reports are quite useless and most likely to be ignored.
+	Please note that although I'm open to suggestions, it doens't mean
+	I will implement it. There are a lot of other things I have to do.
+	If you want some feature, try coding it yourself and send me a patch.
+	You can reach me at kojima@windowmaker.org
+
+- I18N support does not work. 
+	Check these:
+	- the LANG environment variable is set to your locale, and 
+	  the locale is supported by your OS's locale or X's locale
+	  emulation. you can display all supported locales by 
+	  executing "locale -a" command if it available. and you
+	  can check if your locale is supported by X's locale emulation.
+	  See "/usr/X11R6/lib/X11/locale/locale.alias"
+
+	- if your OS doesn't support any locale or if your OS doesn't 
+ 	  support a locale for your language, you can use X Window System's
+	  locale emulation feature instead of OS's locale. To use this
+	  feature, add this option to the configure, "--with-x-locale".
+	  if your OS is commercial one, such as Solaris,IRIX,AIX,...,
+	  you perhaps don't have to use X's locale emulation.
+	  But if your OS is Linux or NetBSD or .. , it's possible
+	  your locale is not supported so far. then use "--with-x-locale".
+
+	  Note: to use X's locale emulation, your Xlib has to be
+	        compiled so that the locale emulation is enabled.
+	        Linux RedHat5.0's default Xlib is not compiled 
+		like that. (RH4.x are ok). Recompiled Xlib for
+		RH5.0 where you can use locale emulation is available
+		here:
+		ftp://ftp.linux.or.jp/pub/RPM/glibc
+
+	- if you'd like to display multibyte characters, wmaker have to
+	  be compiled with multibyte character support. Add this option
+	  to the configure, "--enable-kanji".
+
+	- the fonts you're using support your locale. if your font
+	  setting on $HOME/GNUstep/Defaults/WindowMaker is like..
+
+	  WindowTitleFont = "-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+	  MenuTitleFont = "-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+	  ......................................................
+
+	  then you can't display non iso8859-x charcters by helvetica. 
+	  so quick way to display various languages' font is to change
+	  all the font settings into:
+	  
+		"-*-*-medium-r-normal-*-14-*-*-*-*-*-*-*"
+
+	  and also you need to change font settings in style files in
+	  the "$HOME/Library/WindowMaker/Style" directory.
+
+	- the LC_CTYPE environment variable is unset or it has the correct
+          value. If you don't know what is the correct value, unset it.
+
+- Netscape is not refreshed correctly. 
+	This problem is not specific to WindowMaker. I noted this problem
+	with AfterStep, fvwm2 and olwm. It's probably something with Netscape
+	or XFree86. Note that this only happens when a menu or icon is
+	laying over the affected window. 
+Fix:
+	- Don't place menus over Netscape. 
+	- Turn UseSaveUnders off.
+
+- Why some apps, like Netscape, can't be docked like others? 
+	WindowMaker relies on some window properties in the apps.
+	These tell what windows belong to a single instance of an
+	app, how the app must be started (the command line) and 
+	the application specific identification of the type of
+	window (class and instance). You can see if these are supported
+	by the application by running xprop on the window. The following
+	properties must appear:
+	* WM_CLASS(STRING):
+
+	* WM_CLIENT_LEADER(WINDOW):
+		OR
+	  WM_HINTS(WM_HINTS):
+		window id # of group leader:
+
+	* WM_COMMAND(STRING):
+
+	Some applications, like the Gimp don't have enough information
+even for assigning icons.
+
+- How do I dock asclock?
+	1. build the included asclock
+	2. run asclock -shape
+	3. drag asclock to the dock and drop it when a white shadow appears
+	4. double click on the back of the asclock icon with the 3rd mouse 
+		button. A little dot will appear on the top-right corner.
+
+- What are the bullet-hole icons?
+	They are default icons used for applications that don't have any
+assigned to them. Check the User Guide for information on how to
+assign icons to applications and windows. If you already did and still
+get these icons, make sure that the icons you have are accessible to
+WindowMaker. The PixmapPath option in $HOME/GNUstep/WindowMaker must 
+include the path where the icon resides. 
+
+
+- When I dock asclock, wmload or whatever and restart a bullet-hole 
+icon appears.
+	Double click on the icon with the right mouse button. A little
+	dot should appear in the top-right corner.
+
+
+- What are the 3 dots on the dock buttons?
+	They indicate the app is not running. As soon as you
+	double click on the button and launch the app, the
+	dots will disappear.
+	
+- But they don't disappear when I launch xyz!!!
+	The dots will not disappear for apps that can't be docked
+	in the normal way. There's no reasonable way to fix this.
+
+- Is there a ASCP like control panel for WindowMaker? When will it be done?
+	There is no control panel for WindowMaker yet. I don't know when 
+it will be done. 
+
+
+- How do I swallow clock, xload etc.?
+	You can't swallow things (WindowMaker is not fvwm or AfterStep).
+	What you can do is dock some apps that have icon windows or
+	animated icons, like the patched asclock.
+
+- Function key bindings don't work
+
+> From: Adam Zygmunt <azygmun@bgnet.bgsu.edu>
+>
+> I found what's causing the problem! It's that the xmodmap program (run
+> by xinit) already assigned F-keys 1 through 5 before wmaker runs. Here's
+> a copy of the file:
+> 
+> ~/.Xmodmap:
+> 
+> ! *** Installed by xview3L5 ***
+> ! F1=Help  (move pointer on panel, press F1 to show help on the item)
+> ! F2=Find  (after having selected some text, press F2 to do a search)
+> ! F3=Cut   (select text, press F3 to move text into clipboard)
+> ! F4=Copy  (select text, press F4 to copy text into clipboard)
+> ! F5=Paste (insert text from clipboard at caret position)
+> 
+> keysym F1 = Help
+> keysym F2 = F19
+> keysym F3 = F20
+> keysym F4 = F16
+> keysym F5 = F18
+> 
+> This could be something peculiar to Slackware when the OLWM/xview
+> package is installed.
+> 
+
+If your .xmodmap file has something like the above, comment out the
+entries that redefine the function keys.
+
+
+- How do I assign different icons to xterms?
+
+You must run xterm as:
+
+xterm -name <name> -e <command>
+
+For example:
+
+xterm -name pine -e pine
+
+xterm -name foobar -e telnet foobar.com
+
+xterm -name vi -e vi
+
+Then, assign icons to the applications in 
+$HOME/GNUstep/Defaults/WMWindowAttributes like:
+
+
+pine.XTerm = { Icon = "mailbox.xpm"; };
+
+foobar.XTerm = { Icon = "foobar.xpm"; };
+
+vi.XTerm = { Icon = "editor.xpm"; };
+

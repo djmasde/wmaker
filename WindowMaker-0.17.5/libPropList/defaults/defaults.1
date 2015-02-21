@@ -1,0 +1,42 @@
+.TH DEFAULTS 1 "Jul  7 1997" 
+
+.SH NAME
+defaults \- access the GNUstep user defaults system
+
+.SH SYNOPSIS
+.B defaults
+.RB "[ { " -f " | " --filename " } "
+.IR filename " ] " command " [ " args " ] "
+.PP
+
+Recognized commands:
+.PP
+
+.B read
+.RI "[ " domain-name " [ " key " ] ]"
+.PP
+.B write
+{ \fIdomain-name 'domain-rep'\fR | \fI domain-name key 'value-rep' \fR }
+.PP
+.B delete
+.RI "[ " domain-name " [ " key " ] ]"
+.PP
+.B domains
+.PP
+.B find
+.I word
+
+.SH DESCRIPTION
+\fBdefaults\fR allows users to read, write, delete and modify GNUstep
+user defaults from a UNIX shell. If a file name is given with the
+\fB-f\fR or \fB--filename\fR options, all operations are performed on
+the contents of the given file; otherwise, the name of the file is
+created by concatenating the environment variables \fBGNUSTEP_USER_PATH\fR/
+and \fBGNUSTEP_DEFAULTS_FILE\fR (substituting \fI~/GNUstep/\fR and \fI.GNUstepDefaults\fR, 
+respectively, if these environment variables are not defined). Thus,
+without any modifications, the file \fI~/GNUstep/.GNUstepDefaults\fR
+is used, which is the file GNUstep uses to store user defaults in.
+
+
+
+

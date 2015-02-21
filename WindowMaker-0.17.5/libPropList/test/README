@@ -1,0 +1,6 @@
+This directionary contains a test suite for libPropList. The tests are:
+
+	o memtest: Brute-force memory consumption test; tests
+		   allocation, copying, describing, and releasing of
+		   all four data types. Run it piping stdout into a
+		   file, and supervise it with ps or top. 

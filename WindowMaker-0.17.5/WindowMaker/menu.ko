@@ -1,0 +1,141 @@
+//
+// Root Menu definition for WindowMaker
+//
+// Syntax is:
+//
+// <Title> <Command> <Parameters>
+//
+// <Title> is any string to be used as title. Must be enclosed with " if it
+// 	has spaces
+//
+// <Command> one of the valid commands: 
+//	MENU - starts (sub)menu definition
+//	END  - end (sub)menu definition
+//	EXEC <program> - executes an external program
+//	EXIT - exits the window manager
+//	RESTART [<window manager>] - restarts WindowMaker or start another
+//			window manager
+//	REFRESH - refreshes the desktop
+//	ARRANGE_ICONS - rearranges the icons on the workspace
+//	SHUTDOWN - kills all clients (and close the X window session)
+//	WORKSPACE_MENU - adds a submenu for workspace operations
+//	SHOW_ALL - unhides all windows on workspace
+//	HIDE_OTHERS - hides all windows on the workspace, except the
+//		focused one (or the last one that received focus)
+//
+// <Parameters> is the program to execute.
+//
+// ** Options for command line in EXEC:
+// %s - substitute with current selection. If no selection is available, the
+//	command is aborted
+// %w - substitute with the current selected window ID. If no window is 
+//	selected, empty is returned 
+// 
+// You can override special characters (as % and ") with the \ character:
+// ex: xterm -T "\"Hello World\""
+//
+// Each MENU statement must have one mathching END statement at the end. 
+// See example:
+
+
+#include <wmmacros>
+
+"WindowMaker" MENU
+	"정    보" MENU
+		"Info Panel..." INFO_PANEL
+		"Legal" LEGAL_PANEL
+		"시스템 로드" EXEC xosview || xload
+		"프로세서 보기" EXEC xterm -e top
+		"맨 페이지 보기" EXEC xman
+	"정    보" END
+//	"XTerm" EXEC xterm -sb || color-xterm -sb || xterm -sb
+	"한    텀" EXEC hanterm -sb -sl 3000 -fg WHITE -bg ROYALBLUE4 
+	"풀 그 림" MENU
+		"터미널" MENU
+			"뉴스그룹" EXEC hanterm -sb -sl 3000 -e slrn
+			"커다란 한텀" EXEC hanterm
+			"작은 한텀" EXEC hanterm -fg white -bg midnightblue -sb -sl 3000 -geometry 80x7
+		"터미널" END
+		"나우누리" EXEC hanterm -sb -sl 3000 -fg WHITE -bg black -e nownuri
+		"가  우" EXEC gautcp 
+		"한글/X" EXEC hwpx 
+		"그래픽 툴" MENU
+			"Gimp" EXEC gimp
+			"XV" EXEC xv
+			"XPaint" EXEC xpaint
+			"XFig" EXEC xfig
+		"그래픽 툴" END
+		"모질라" EXEC pxhan netscape 
+  		"GV" EXEC gv %a(gv)
+		"Acrobat" EXEC /usr/local/Acrobat3/bin/acroread %a(Acrobat)
+  		"TkDesk" EXEC tkdesk
+	"풀 그 림" END
+	"문서편집" MENU
+		"XEmacs" EXEC xemacs || emacs
+		"NEdit" EXEC nedit
+		"Xedit" EXEC xedit
+		"VI" EXEC xterm -e vi
+	"문서 편집" END
+	"잡동사니" MENU
+		"xplaycd" EXEC xplaycd
+		"Xmixer" EXEC xmixer
+	"잡동사니" END
+	"유틸리티" MENU
+		"계산기" EXEC xcalc
+		"글꼴 선택" EXEC xfontsel
+		"돋보기" EXEC xmag
+		"Colormap" EXEC xcmap
+		"어플 종료시키기" EXEC xkill
+		"ASClock" EXEC asclock -shape
+		"클립보드" EXEC xclipboard
+	"유틸리티" END
+
+	"Selection" MENU
+		"메일 보내기" EXEC hanterm -name mail -T "Pine" -e pine %s
+	        "Navigate" EXEC netscape -noraise -remote \
+			'openURL(%s,new-window)' || netscape %s
+		"메뉴얼에서 찾기" EXEC MANUAL_SEARCH(%s)
+	"Selection" END
+
+	"작업공간" WORKSPACE_MENU
+	"작업환경" MENU
+		"WindowMaker설정" MENU
+			"메뉴 바꾸기" EXEC hanterm -e vi ~/GNUstep/Library/WindowMaker/menu.ko
+			"옵션 바꾸기" EXEC hanterm -e vi ~/GNUstep/Library/WindowMaker/app_options
+			"설정 바꾸기" EXEC hanterm -e vi ~/GNUstep/Library/WindowMaker/preferences
+		"WindowMaker설정" END
+		"다른 창들 숨기기" HIDE_OTHERS
+		"모두 보이기" SHOW_ALL
+		"아이콘 정렬하기" ARRANGE_ICONS
+		"Refresh" REFRESH
+		"화면 잠금" EXEC xlock -allowroot -usefirst -mode flame
+		"배경화면" MENU
+			"None" EXEC CLEARROOT
+			"Black"  WS_BACK '(solid, black)'
+			"Blue"  WS_BACK '(solid, "#505075")'
+			"Purple"  WS_BACK '(solid, "#554466")'
+			"Wheat"  WS_BACK '(solid, wheat4)'
+			"Dark Gray"  WS_BACK '(solid, "#333340")'
+			"Wine"  WS_BACK '(solid, "#400020")'
+		"배경화면" END
+#if (DEPTH>8)
+// Setup some gradient schemes for newbies and lazy people
+// You must RESTART after selecting the gradient.
+#include <gradients.menu>
+#endif
+		"Save Workspace" EXEC SAVE_WORKSPACE
+	"작업환경" END
+	
+#if (UID==0)	// root only stuff
+	"시스템" MENU
+		// the RedHat control panel program
+		"RH ControlPanel" EXEC control-panel
+	"시스템" END
+#endif
+	"종    료"	MENU
+		"다시 시작" RESTART
+		"Afterstep 실행하기" RESTART afterstep
+		"종료..."  EXIT
+		"세션 종료..." SHUTDOWN
+	"종    료" END
+"Applications" END

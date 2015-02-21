@@ -1,0 +1,8 @@
+- wmaker crashes if a parse error occurs
+- the animation of shade puts ImageMagick in a weird state
+- during startup, transient windows should be miniaturized with their owners
+  not in their own icons
+- in focus follow mouse mode with autoraise, it is possible to
+  put window raising in a endless loop.
+- shaped windows don't resize very well
+- AutoArrangeIcons=NO will not work correctly if StickyIcons is enabled

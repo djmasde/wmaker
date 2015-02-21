@@ -1,0 +1,129 @@
+#!/bin/sh
+#\
+exec tclsh $0 "$@"
+
+
+#
+# Convert WindowMaker <= 0.6.3 .style file to 0.10.0 .style file.
+#
+# Copyright (c) Alfredo Kojima
+
+
+foreach j {tex col gr} {
+foreach i {f u p m t} {
+	set $i$j {}
+}
+}
+
+
+set f [open [lindex $argv 0] r]
+
+puts "{"
+
+while {! [eof $f] } {
+	gets $f line
+	
+	set line [string trim $line]
+	
+	if {"$line" == ""} continue
+	
+	if {"[string range $line 0 0]" == "#"} continue
+	
+	if {"[string range $line 0 1]" == "//"} continue
+	
+	
+	set l [split $line =]
+	set key [string trim [string toupper [lindex $l 0]]]
+	set val [string trim [lindex $l 1]]
+	
+	if {"$key" == "FTITLEFORECOLOR"} {
+		puts "FTitleColor = \"$val\";"
+	} elseif {"$key" == "UTITLEFORECOLOR"} {
+		puts "UTitleColor = \"$val\";"
+	} elseif {"$key" == "PTITLEFORECOLOR"} {
+		puts "PTitleColor = \"$val\";"
+	} elseif {"$key" == "MENUTITLEFORECOLOR"} {
+		puts "MenuTitleColor = \"$val\";"
+	} elseif {"$key" == "MENUTEXTFORECOLOR"} {
+		puts "MenuTextColor = \"$val\";"	
+	} elseif {"$key" == "MENUTEXTDISABLEDCOLOR"} {
+		puts "MenuDisabledColor = \"$val\";"
+	} elseif {"$key" == "WINDOWTITLEFONT"} {
+		puts "$key = \"$val\";"
+	} elseif {"$key" == "MENUTITLEFONT"} {
+		puts "$key = \"$val\";"
+	} elseif {"$key" == "ICONTITLEFONT"} {
+		puts "$key = \"$val\";"
+	} elseif {"$key" == "MENUTEXTFONT"} {
+		puts "$key = \"$val\";"
+	} elseif {"$key" == "DISPLAYFONT"} {
+		puts "$key = \"$val\";"
+	} elseif {"$key" == "TITLETEXTJUSTIFY"} {
+		puts "TitleJustify = $val;"
+	} elseif {"$key" == "FTITLETEXTURE"} {
+		set ftex $val
+	} elseif {"$key" == "UTITLETEXTURE"} {
+		set utex $val
+	} elseif {"$key" == "PTITLETEXTURE"} {
+		set ptex $val
+	} elseif {"$key" == "MENUTITLETEXTURE"} {
+		set mtex $val
+	} elseif {"$key" == "MENUTEXTTEXTURE"} {
+		set ttex $val
+	} elseif {"$key" == "FTITLEGRADIENT"} {
+		set fgr $val
+	} elseif {"$key" == "UTITLEGRADIENT"} {
+		set ugr $val
+	} elseif {"$key" == "PTITLEGRADIENT"} {
+		set pgr $val
+	} elseif {"$key" == "MENUTITLEGRADIENT"} {
+		set mgr $val
+	} elseif {"$key" == "MENUTEXTGRADIENT"} {
+		set tgr $val
+	} elseif {"$key" == "FTITLEBACKCOLOR"} {
+		set fcol $val
+	} elseif {"$key" == "UTITLEBACKCOLOR"} {
+		set ucol $val
+	} elseif {"$key" == "PTITLEBACKCOLOR"} {
+		set pcol $val
+	} elseif {"$key" == "MENUTITLEBACKCOLOR"} {
+		set mcol $val
+	} elseif {"$key" == "MENUTEXTBACKCOLOR"} {
+		set tcol $val
+	}
+}
+
+set fname FTitleBack
+set uname UTitleBack
+set pname PTitleBack
+set mname MenuTitleBack
+set tname MenuTextBack
+
+
+foreach i {f u p m t} {
+	 set a [set $i[]tex]
+	 	
+	 if {"$a" == {}} continue
+
+	 if {"$a" == "solid"} {
+	 	if {[set $i[]col]=={}} {
+			continue
+		} else {
+			puts "[set $i[]name] = (solid, \"[set $i[]col]\");"
+		}
+	 } else {
+	 	if {[set $i[]gr]=={}} {
+			continue
+		} else {
+			set cols [string trim [split [set $i[]gr] ,]]
+			set col1 [string trim [lindex $cols 0]]
+			set col2 [string trim [lindex $cols 1]]
+			
+			puts "[set $i[]name] = ($a, \"$col1\", \"$col2\");"
+		}
+	 }
+}
+
+
+
+puts "}"

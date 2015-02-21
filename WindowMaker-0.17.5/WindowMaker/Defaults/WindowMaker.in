@@ -1,0 +1,117 @@
+{
+  IconPath = (
+    "~/GNUstep/Library/Icons",
+    "#pkgdatadir#/Icons",
+    "/usr/X11R6/include/X11/pixmaps",
+    "/usr/local/share/pixmaps",
+    "/usr/share/pixmaps"
+  );
+  PixmapPath = (
+    "~/GNUstep/Library/WindowMaker/Pixmaps",
+    "~/GNUstep/Library/WindowMaker/Backgrounds",
+    "#pkgdatadir#/Pixmaps",
+    "#pkgdatadir#/Backgrounds",
+    "/usr/X11R6/include/X11/pixmaps",
+    "/usr/local/share/pixmaps",
+    "/usr/share/pixmaps"
+  );
+  IconSize = 64;
+  FocusMode = manual;
+  SwapMenuButton = No;
+  ColormapSize = 4;
+  DisableDithering = No;
+  ModifierKey = Mod1;
+  NewStyle = Yes;
+  DisableDock = No;
+  DisableClip = No;
+  Superfluous = No;
+  StickyIcons = No;
+  SaveSessionOnExit = No;
+  ColormapMode = auto;
+  RaiseDelay = 0;
+  CirculateRaise = Yes;
+  AutoFocus = Yes;
+  WindowPlacement = auto;
+  WindowPlaceOrigin = (64, 64);
+  UseSaveUnders = No;
+  DisableSound = No;
+  DisableAnimations = No;
+  DontLinkWorkspaces = No;
+  AutoArrangeIcons = Yes;
+  WorkspaceChangeDelay = 700;
+  AdvanceToNewWorkspace = No;
+  CycleWorkspaces = No;
+  ResizeDisplay = line;
+  MoveDisplay = corner;
+  OpaqueMove = Yes;
+  OnTopTransients = Yes;
+  WrapMenus = No;
+  ScrollableMenus = Yes;
+  MenuScrollSpeed = Medium;
+  IconSlideSpeed = Medium;
+  ShadeSpeed = Medium;
+  DoubleClickTime = 250;
+  AlignSubmenus = No;
+  NoWindowUnderDock = Yes;
+  NoWindowOverIcons = No;
+  IgnoreFocusClick = No;
+  CloseKey = None;
+  MaximizeKey = None;
+  VMaximizeKey = None;
+  RaiseLowerKey = None;
+  DontConfirmKill = NO;
+  ShadeKey = None;
+  NextWorkspaceKey = "Meta+Control+Right";
+  PrevWorkspaceKey = "Meta+Control+Left";
+  RootMenuKey = F12;
+  WindowListKey = F11;
+  WindowMenuKey = F10;
+  RaiseKey = "Meta+Up";
+  LowerKey = "Meta+Down";
+  FocusNextKey = "Meta+Tab";
+  FocusPrevKey = "Meta+Shift+Tab";
+  Workspace1Key = "Meta+1";
+  Workspace2Key = "Meta+2";
+  Workspace3Key = "Meta+3";
+  Workspace4Key = "Meta+4";
+  Workspace5Key = "Meta+5";
+  Workspace6Key = "Meta+6";
+  Workspace7Key = "Meta+7";
+  Workspace8Key = "Meta+8";
+  Workspace9Key = "Meta+9";
+  Workspace10Key = "Meta+0";
+  HideKey = "Meta+H";
+  ConstrainWindowSize = No;
+  MiniaturizeKey = "Meta+M";
+  NextWorkspaceLayerKey = None;
+  PrevWorkspaceLayerKey = None;
+  ClipLowerKey = None;
+  ClipRaiseKey = None;
+  ClipRaiseLowerKey = "Meta+F";
+  IconBack = (dgradient, "#a6a6b6", "#515561");
+  TitleJustify = left;
+  WindowTitleFont = "-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+  MenuTitleFont = "-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+  MenuTextFont = "-*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*";
+  IconTitleFont = "-*-helvetica-medium-r-normal-*-8-*-*-*-*-*-*-*";
+  ClipTitleFont = "-*-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*";
+  DisplayFont = "-*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*";
+  HighlightColor = white;
+  HighlightTextColor = black;
+  ClipTitleColor = black;
+  CClipTitleColor = "#616161";
+  AClipColor = "#38f830";
+  IClipColor = "#008000";
+  FTitleColor = white;
+  PTitleColor = white;
+  UTitleColor = black;
+  FTitleBack = (hgradient, "#210005", "#900030");
+  PTitleBack = (hgradient, "#515055", "#808080");
+  UTitleBack = (hgradient, "#808080", "#d0d0d0");
+  MenuTitleColor = white;
+  MenuTextColor = black;
+  MenuDisabledColor = gray40;
+  MenuTitleBack = (hgradient, "#900030", "#210005");
+  MenuTextBack = (hgradient, "#d0d0d0", "#808080");
+  WorkspaceBack = (solid, "#243e6c");
+}

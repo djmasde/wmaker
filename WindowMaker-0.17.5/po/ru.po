@@ -1,0 +1,718 @@
+msgid ""
+msgstr ""
+"Date: 1998-06-05 20:07:48+0400\n"
+"From: August S.Sigov,none(yet),110-19-14,232-21-17, <root@freedomain.localdomain>\n"
+"Content-Type: text/plain; charset=koi8\n"
+"Language-Team: Russian \n"
+"Xgettext-Options: --default-domain=WindowMaker --add-comments --keyword=_\n"
+"Files: ../src/generic/error.c ../src/defaults.c ../src/dialog.c ../src/dock.c ../src/event.c ../src/framewin.c ../src/icon.c ../src/main.c ../src/menu.c ../src/misc.c ../src/pixmap.c ../src/resources.c ../src/rootmenu.c ../src/screen.c ../src/stacking.c ../src/startup.c ../src/switchmenu.c ../src/texture.c ../src/wdefaults.c ../src/winmenu.c ../src/winspector.c ../src/workspace.c\n"
+
+#: ../src/generic/error.c:46
+msgid " fatal error: "
+msgstr " неустранимая ошибка: "
+
+#: ../src/generic/error.c:72
+msgid " warning: "
+msgstr " предупреждение: "
+
+#: ../src/defaults.c:512 ../src/screen.c:494 ../src/screen.c:574 ../src/screen.c:580
+msgid "could not read domain \"%s\" from defaults database"
+msgstr "не могу прочесть значение по умолчанию домена \"%s\""
+
+#: ../src/defaults.c:876 ../src/wdefaults.c:401 ../src/winspector.c:496
+msgid "can't convert \"%s\" to boolean"
+msgstr "не могу преобразовать \"%s\" в булевскую величину"
+
+#: ../src/defaults.c:949 ../src/defaults.c:1281 ../src/defaults.c:1314 ../src/wdefaults.c:383 ../src/wdefaults.c:416
+msgid "Wrong option format for key \"%s\". Should be %s."
+msgstr "Неверный формат опции для ключа \"%s\". Должен быть %s."
+
+#: ../src/defaults.c:999
+msgid "Invalid focus mode \"%s\". Should be Manual, Auto or SemiAuto."
+msgstr "Неверный режим фокуса \"%s\". Должен быть Manual (Ручной), Auto ( Автоматический) или SemiAuto"
+
+#: ../src/defaults.c:1034
+msgid "Invalid window placement mode \"%s\". Should be Auto, Cascade, Random or Manual."
+msgstr "Неверный режим размещения окон \"%s\". Должен быть Auto (Автоматически), Cascade (Каскад), Random (Случайный) или Manual (Ручной)."
+
+#: ../src/defaults.c:1068
+msgid "Invalid geometry display type \"%s\". Should be Center, Corner, Floating or Line."
+msgstr "Неверный тип геометрии дисплея \"%s\". Должен быть Center (Центр), Corner (Угол), Floating (Плавающий) или Line (Линия)."
+
+#: ../src/defaults.c:1130 ../src/defaults.c:1161 ../src/defaults.c:1173 ../src/defaults.c:1214 ../src/defaults.c:1250 ../src/defaults.c:1353 ../src/resources.c:135
+msgid "could not parse color \"%s\""
+msgstr "не могу разобрать цвет \"%s\""
+
+#: ../src/defaults.c:1142
+msgid "bad number of arguments in gradient specification"
+msgstr "неверное количество аргументов в спецификации градиента"
+
+#: ../src/defaults.c:1188
+msgid "too few arguments in multicolor gradient specification"
+msgstr "слишком мало аргументов в спецификации многоцветного градиента"
+
+#: ../src/defaults.c:1289 ../src/defaults.c:1378
+msgid "Error in texture specification for key \"%s\""
+msgstr "Ошибка в спецификации текстуры для ключа \"%s\""
+
+#: ../src/defaults.c:1408
+msgid "Invalid justification type \"%s\". Should be Left, Center or Right"
+msgstr "Неверный тип выравнивания \"%s\". Должен быть Left (Влево), Center (По центру) или Right (Вправо)"
+
+#: ../src/defaults.c:1436
+msgid "could not load any usable font"
+msgstr "не могу загрузить какой-нибудь подходящий шрифт"
+
+#: ../src/defaults.c:1515
+msgid "invalid key modifier \"%s\""
+msgstr "неверный модификатор ключа \"%s\""
+
+#: ../src/defaults.c:1527
+msgid "invalid kbd shortcut specification \"%s\""
+msgstr "неверное указание сочетания клавиш \"%s\""
+
+#: ../src/defaults.c:1533
+msgid "invalid key in shortcut \"%s\""
+msgstr "неверная клавиша в сочетании \"%s\""
+
+#: ../src/defaults.c:1619
+msgid "could not render texture for icon background"
+msgstr "не могу отобразить текстуру для фона значка"
+
+#: ../src/defaults.c:1949
+msgid "could not render texture for workspace background"
+msgstr "не могу отобразить текстуру для фона рабочего места"
+
+#: ../src/dialog.c:74 ../src/dialog.c:86 ../src/dialog.c:134
+msgid "OK"
+msgstr "OK"
+
+#: ../src/dialog.c:74 ../src/dialog.c:79 ../src/dialog.c:134
+msgid "Cancel"
+msgstr "Отмена"
+
+#: ../src/dialog.c:79 ../src/rootmenu.c:152
+msgid "Exit"
+msgstr "Выход"
+
+#: ../src/dock.c:316 ../src/dock.c:351 ../src/dock.c:1341
+msgid "Dock Icon"
+msgstr "Значок Причала"
+
+#: ../src/dock.c:317
+msgid "Enter command for the docked application:"
+msgstr "Введите комманду для пришвартованного приложения:"
+
+#: ../src/dock.c:352
+msgid "Enter command for dropped objects:"
+msgstr "Введите команду для перетаскиваемых объектов:"
+
+#: ../src/dock.c:484
+msgid "Floating Fiend"
+msgstr "Плавающий Пирс"
+
+#: ../src/dock.c:487
+msgid "Floating Dock"
+msgstr "Плавающий Причал"
+
+#: ../src/dock.c:494
+msgid "Collapsed"
+msgstr "Свернуто"
+
+#: ../src/dock.c:501
+msgid "Launch"
+msgstr "Запустить"
+
+#: ../src/dock.c:503
+msgid "Autolaunch"
+msgstr "Запускать при старте"
+
+#: ../src/dock.c:509
+msgid "Set arguments..."
+msgstr "Назначить аргументы..."
+
+#: ../src/dock.c:512
+msgid "Set drop arguments..."
+msgstr "Аргументы при перетаскивании"
+
+#: ../src/dock.c:516 ../src/winmenu.c:243
+msgid "Kill"
+msgstr "Убить"
+
+#: ../src/dock.c:841 ../src/dock.c:847
+msgid "bad window name value in dock state info"
+msgstr "плохое значение имени окна в информации о состоянии Причала"
+
+#: ../src/dock.c:935 ../src/dock.c:947
+msgid "bad value in docked icon state info %s"
+msgstr "плохое значение в информации о состоянии пришвартованного значка"
+
+#: ../src/dock.c:1074
+msgid "there are too many icons stored in dock. Ignoring what doesn't fit"
+msgstr "слишком много значков пришвартовано. Не замечаю не влезающие"
+
+#: ../src/dock.c:1342
+msgid "Command:"
+msgstr "Команда:"
+
+#: ../src/dock.c:1855 ../src/dock.c:1859
+msgid "Could not execute command \"%s\""
+msgstr "Не могу выполнить команду \"%s\""
+
+#: ../src/dock.c:1862 ../src/rootmenu.c:122 ../src/winspector.c:384 ../src/winspector.c:392
+msgid "Error"
+msgstr "Ошибка"
+
+#: ../src/event.c:467
+msgid "stack overflow: too many dead processes"
+msgstr "переполнение стека: слишком много мертвых процессов"
+
+#: ../src/framewin.c:601 ../src/framewin.c:722
+msgid "could not render gradient: %s"
+msgstr "не могу отобразить градиент: %s"
+
+#: ../src/framewin.c:619 ../src/framewin.c:638 ../src/framewin.c:652 ../src/framewin.c:662 ../src/framewin.c:732 ../src/icon.c:248 ../src/texture.c:551
+msgid "error rendering image:%s"
+msgstr "ошибка при прорисовке изображения:%s"
+
+#: ../src/icon.c:437
+msgid "could not find default icon \"%s\""
+msgstr "не могу найти значок по умолчанию \"%s\""
+
+#: ../src/icon.c:444
+msgid "could not load default icon \"%s\""
+msgstr "не могу загрузить значок по умолчанию \"%s\""
+
+#: ../src/main.c:163
+msgid "Restart failed!!!"
+msgstr "Перезапуск не удался!!!"
+
+#: ../src/main.c:178
+msgid "%s aborted.\n"
+msgstr "%s прервано.\n"
+
+#: ../src/main.c:186
+msgid "usage: %s [-options]\n"
+msgstr "использование: %s [-параметры]\n"
+
+#: ../src/main.c:187
+msgid "options:"
+msgstr "параметры:"
+
+#: ../src/main.c:189
+msgid " -nocpp \t\tdisable preprocessing of configuration files"
+msgstr " -nocpp \t\tзапретить предобработку файлов настройки"
+
+#: ../src/main.c:192
+msgid " -nodock\t\tdo not open the application Dock"
+msgstr " -nodock\t\tне открывать Причал приложений"
+
+#: ../src/main.c:193
+msgid " -nofiend\t\tdo not open the application Fiend"
+msgstr "-nofiend\t\tне открывать Пирс для приложений"
+
+#: ../src/main.c:199
+msgid " -display host:dpy\tdisplay to use"
+msgstr " -display хост:дисплей\tиспользовать данный дисплей"
+
+#: ../src/main.c:200
+msgid " -version\t\tprint version and exit"
+msgstr " -version\t\tнапечатать номер версии и выйти"
+
+#: ../src/main.c:215
+msgid "could not determine home directory"
+msgstr "не могу обнаружить домашний каталог"
+
+#: ../src/main.c:225
+msgid ""
+"could not find user GNUstep directory.\n"
+"Make sure you have installed WindowMaker correctly and run wmaker.inst"
+msgstr ""
+"не могу найти каталог GNUstep пользователя.\n"
+"Убедитесь, что WindowMaker установлен верно или запустите wmaker.inst"
+
+#: ../src/main.c:245
+msgid "%s:could not execute initialization script"
+msgstr "%s:не могу выполнить начальный скрипт"
+
+#: ../src/main.c:303 ../src/main.c:310 ../src/main.c:317
+msgid "too few arguments for %s"
+msgstr "слишком мало аргументов для %s"
+
+#: ../src/main.c:321
+msgid "bad value for visualid: \"%s\""
+msgstr "плохое значение для visualid: \"%s\""
+
+#: ../src/main.c:366
+msgid "X server does not support locale"
+msgstr "X сервер не поддерживает локализацию"
+
+#: ../src/main.c:369
+msgid "cannot set locale modifiers"
+msgstr "не могу установить параметры локали"
+
+#: ../src/main.c:383
+msgid "could not open display \"%s\""
+msgstr "не могу открыть дисплей \"%s\""
+
+#: ../src/menu.c:274
+msgid "wrealloc() failed while trying to add menu item"
+msgstr "wrealloc() не удалась при попытке добавить элемент меню"
+
+#: ../src/misc.c:65
+msgid "could not define value for %s for cpp"
+msgstr "не могу определить значения для %s для cpp"
+
+#: ../src/misc.c:95
+msgid "could not get password entry for UID %i"
+msgstr "не могу получить строку пароля для UID %i"
+
+#: ../src/misc.c:119
+msgid "your machine is misconfigured. HOSTNAME is set to %s"
+msgstr "Ваша машина настроена неверно. HOSTNAME установлено в %s"
+
+#: ../src/misc.c:125
+msgid "your machine is misconfigured. HOST is set to %s"
+msgstr "Ваша машина настроена неверно. HOST установлен в %s"
+
+#: ../src/misc.c:533
+msgid "could not find icon file \"%s\""
+msgstr "не могу найти файл значка \"%s\""
+
+#: ../src/misc.c:622
+msgid "selection timed-out"
+msgstr "выделение устарело"
+
+#: ../src/misc.c:636
+msgid "Program Arguments"
+msgstr "Аргументы Программы"
+
+#: ../src/misc.c:655
+msgid "Enter command arguments:"
+msgstr "Введите аргументы команды:"
+
+#: ../src/misc.c:676
+msgid "unable to get dropped data from DND drop"
+msgstr "не могу получить перетащенные данные от DND drop"
+
+#: ../src/misc.c:685
+msgid "error getting dropped data from DND drop"
+msgstr "ошибка при получении перетащенных данных от DND drop"
+
+#: ../src/misc.c:691
+msgid "out of memory while getting data from DND drop"
+msgstr "исчерпана память при получении данных от DND drop"
+
+#: ../src/misc.c:735 ../src/misc.c:854
+msgid "out of memory during expansion of \"%s\""
+msgstr "исчерпана память во время растяжения \"%s\""
+
+#: ../src/misc.c:789
+msgid "out of memory during expansion of \"%w\""
+msgstr "исчерпана память во время растяжения \"%w\""
+
+#: ../src/misc.c:808
+msgid "out of memory during expansion of \"%a\""
+msgstr "исчерпана память во время растяжения \"%a\""
+
+#: ../src/misc.c:830
+msgid "out of memory during expansion of \"%d\""
+msgstr "исчерпана память во время растяжения \"%d\""
+
+#: ../src/misc.c:842
+msgid "selection not available"
+msgstr "нет выделения"
+
+#: ../src/pixmap.c:230
+msgid "could not load mask bitmap file \"%s\". Won't use mask"
+msgstr "не могу загрузить битовую карту маскирования \"%s\""
+
+#: ../src/resources.c:71
+msgid "The following character sets are missing:"
+msgstr "Следующие наборы знаков отсутствуют:"
+
+#: ../src/resources.c:75
+msgid "The string \"%s\" will be used in place"
+msgstr "Строка \"%s\" будет использована вместо"
+
+#: ../src/resources.c:77
+msgid "of any characters from those sets."
+msgstr "любых знаков из этих наборов."
+
+#: ../src/resources.c:80
+msgid "could not create font set %s. Trying fixed"
+msgstr "не могу создать шрифт %s. Пробую fixed"
+
+#: ../src/resources.c:97
+msgid "could not load font %s. Trying fixed"
+msgstr "не могу загрузить шрифт %s. Пробую fixed"
+
+#: ../src/resources.c:139
+msgid "coult not allocate color \"%s\""
+msgstr "не могу выделить память для цвета \"%s\""
+
+#: ../src/rootmenu.c:120
+msgid "Program \"%s\" not found or cannot be executed."
+msgstr "Программа \"%s\" не найдена или невыполнима."
+
+#: ../src/rootmenu.c:153
+msgid "Exit window manager?"
+msgstr "Выйти из диспетчера окон?"
+
+#: ../src/rootmenu.c:173
+msgid "Close X session"
+msgstr "Завершить X сессию"
+
+#: ../src/rootmenu.c:174
+msgid ""
+"Close Window System session?\n"
+"(all applications will be closed)"
+msgstr ""
+"Закрыть сессию Оконной Системы?\n"
+"(все приложения будут завершены)"
+
+#: ../src/rootmenu.c:176
+msgid "Exiting...\n"
+msgstr "Завершаю работу...\n"
+
+#: ../src/rootmenu.c:315
+msgid "invalid OPEN_MENU specification: %s"
+msgstr "неверная спецификация OPEN_MENU: %s"
+
+#: ../src/rootmenu.c:356
+msgid "%s:could not stat menu"
+msgstr "%s:не могу получить меню"
+
+#: ../src/rootmenu.c:378
+msgid "extra parameters to OPEN_MENU: %s"
+msgstr "добавочные параметры для OPEN_MENU: %s"
+
+#: ../src/rootmenu.c:434 ../src/rootmenu.c:451
+msgid "%s:missing parameter for menu command \"%s\""
+msgstr "%s:недостающий параметр для команды меню \"%s\""
+
+#: ../src/rootmenu.c:492
+msgid "%s:unknown command \"%s\" in menu config."
+msgstr "%s:неизвестная команда \"%s\" в настройке меню"
+
+#: ../src/rootmenu.c:591
+msgid "%s:maximal line size exceeded in menu config: %s"
+msgstr "%s:превышен максимальный размер строки в настройке меню: %s"
+
+#: ../src/rootmenu.c:611
+msgid "%s:missing command in menu config: %s"
+msgstr "%s:отсутствует команда в настройке меню: %s"
+
+#: ../src/rootmenu.c:640
+msgid "%s:syntax error in menu file:END declaration missing"
+msgstr "%s:синтаксическая ошибка в файле меню: END объявления отсутствует"
+
+#: ../src/rootmenu.c:668 ../src/rootmenu.c:747
+msgid "could not make arguments for menu file preprocessor"
+msgstr "не могу подставить аргументы для препроцессора файла меню"
+
+#: ../src/rootmenu.c:674 ../src/rootmenu.c:754
+msgid "%s:could open/preprocess menu file"
+msgstr "%s:не могу открыть/предобработать файл меню"
+
+#: ../src/rootmenu.c:685 ../src/rootmenu.c:767
+msgid "%s:could not open menu file"
+msgstr "%s:не могу открыть файл меню"
+
+#: ../src/rootmenu.c:698
+msgid "%s:syntax error in menu config: %s"
+msgstr "%s:синтаксическая ошибка в настройке меню: %s"
+
+#: ../src/rootmenu.c:708 ../src/rootmenu.c:790
+msgid "%s:no title given for the root menu"
+msgstr "%s:не дано заголовка для корневого меню"
+
+#: ../src/rootmenu.c:780
+msgid "%s:syntax error in menu config. %s"
+msgstr "%s:синтаксическая ошибка в настройке меню. %s"
+
+#: ../src/rootmenu.c:815
+msgid "%s:could not read menu directory"
+msgstr "%s:не могу прочесть каталог меню"
+
+#: ../src/rootmenu.c:829 ../src/rootmenu.c:851
+msgid "out of memory while constructing directory menu %s"
+msgstr "исчерпана память при создании каталога меню %s"
+
+#: ../src/rootmenu.c:839
+msgid "%s:could not stat file \"%s\" in menu directory"
+msgstr "%s:нет информации о файле \"%s\" в каталоге меню"
+
+#: ../src/rootmenu.c:871
+msgid "out of memory while constructing menu entry %s"
+msgstr "исчерпана память при создании элемента меню"
+
+#: ../src/rootmenu.c:913
+msgid "Commands"
+msgstr "Команды"
+
+#: ../src/rootmenu.c:915
+msgid "Exit..."
+msgstr "Выход..."
+
+#: ../src/rootmenu.c:949
+msgid "%s:could not find menu file \"%s\""
+msgstr "%s:не могу найти файл меню \"%s\""
+
+#: ../src/rootmenu.c:955
+msgid "%s:could not stat menu \"%s\""
+msgstr "%s:нет информации о меню \"%s\""
+
+#: ../src/rootmenu.c:979 ../src/rootmenu.c:1026
+msgid "%s:format error in root menu configuration \"%s\""
+msgstr "%s:ошибка формата в настройке корневого меню \"%s\""
+
+#: ../src/screen.c:89
+msgid "it seems that there already is a window manager running"
+msgstr "Похоже что другой менеджер окон уже занял мое место"
+
+#: ../src/screen.c:372
+msgid "could not load logo image for panels"
+msgstr "не могу загрузить заставку для панелей"
+
+#: ../src/screen.c:375
+msgid "error making logo image for panel:%s"
+msgstr "ошибка при подготовке заставки для панели:%s"
+
+#: ../src/screen.c:546
+msgid "could not initialize graphics library context: %s"
+msgstr "не могу проинициализировать контекст графической библиотеки: %s"
+
+#: ../src/stacking.c:89 ../src/stacking.c:148
+msgid "could not get window list!!"
+msgstr "не могу получить список окон!!"
+
+#: ../src/startup.c:140
+msgid "internal X error: %s\n"
+msgstr "внутренняя ошибка X-window: %s\n"
+
+#: ../src/startup.c:157
+msgid "got signal %i (%s) - restarting\n"
+msgstr "получен сигнал %i (%s) - перезапускаюсь\n"
+
+#: ../src/startup.c:159
+msgid "got signal %i - restarting\n"
+msgstr "получен сигнал %i - перезапускаюсь"
+
+#: ../src/startup.c:167
+msgid "got signal %i (%s)\n"
+msgstr "получен сигнал %i (%s)\n"
+
+#: ../src/startup.c:169
+msgid "got signal %i\n"
+msgstr "получен сигнал %i\n"
+
+#: ../src/switchmenu.c:131
+msgid "Windows"
+msgstr "Окна"
+
+#: ../src/texture.c:252
+msgid "image file \"%s\" used as texture could not be found."
+msgstr "файл текстуры \"%s\" не найден."
+
+#: ../src/texture.c:257
+msgid "could not load texture pixmap \"%s\":%s"
+msgstr "не могу загрузить pixmap с текстурой \"%s\":%s"
+
+#: ../src/texture.c:351 ../src/texture.c:547
+msgid "could not render texture: %s"
+msgstr "не могу отобразить текстуру: %s"
+
+#: ../src/winmenu.c:169
+msgid "could not create workspace submenu for window menu"
+msgstr "не могу создать подменю рабочего места для меню окна"
+
+#: ../src/winmenu.c:186
+msgid "(Un)Maximize"
+msgstr "Во весь экран ( переключатель)"
+
+#: ../src/winmenu.c:188
+msgid "Miniaturize"
+msgstr "Свернуть"
+
+#: ../src/winmenu.c:198
+msgid "(Un)Shade"
+msgstr "Втянуть ( переключатель)"
+
+#: ../src/winmenu.c:207
+msgid "Hide"
+msgstr "Убрать"
+
+#: ../src/winmenu.c:215
+msgid "Hide Others"
+msgstr "Убрать остальные"
+
+#: ../src/winmenu.c:218
+msgid "Select"
+msgstr "Выделить"
+
+#: ../src/winmenu.c:227
+msgid "Move To"
+msgstr "Переместить В"
+
+#: ../src/winmenu.c:232
+msgid "Attributes..."
+msgstr "Свойства..."
+
+#: ../src/winmenu.c:235
+msgid "Close"
+msgstr "Закрыть"
+
+#: ../src/winspector.c:385
+msgid "Could not find specified icon file"
+msgstr "Не могу найти указанный файл значка"
+
+#: ../src/winspector.c:393
+msgid "Could not open specified icon file"
+msgstr "Нем огу открыть указанный файл значка"
+
+#: ../src/winspector.c:974
+msgid "not enough memory to open window inspector panel"
+msgstr "недостаточно памяти для открытия панели оконного инспектора"
+
+#. command buttons
+#: ../src/winspector.c:1002
+msgid "Save"
+msgstr "Сохранить"
+
+#: ../src/winspector.c:1008
+msgid "Apply"
+msgstr "Применить"
+
+#: ../src/winspector.c:1015
+msgid "Revert"
+msgstr "Откат"
+
+#. *** window spec ***
+#: ../src/winspector.c:1046
+msgid "Window Specification"
+msgstr "Спецификация Окна"
+
+#: ../src/winspector.c:1077
+msgid "Defaults for all windows"
+msgstr "Значения по умолчанию для всех окон"
+
+#: ../src/winspector.c:1082
+msgid ""
+"The configuration will apply to all\n"
+"windows that have their WM_CLASS property set to the above selected\n"
+"name, when saved."
+msgstr ""
+"Данная конфигурация будет применена ко всем\n"
+"окнам, у которых свойство WM_CLASS установленно в выбранное Вами\n"
+"значение, затем сохранена."
+
+#. *** attributes ***
+#: ../src/winspector.c:1090
+msgid "Attributes"
+msgstr "Свойства"
+
+#: ../src/winspector.c:1097
+msgid "Disable titlebar"
+msgstr "Отключить заголовок"
+
+#: ../src/winspector.c:1101
+msgid "Disable resizebar"
+msgstr "Отключить растяжимость"
+
+#: ../src/winspector.c:1105
+msgid "Not closable"
+msgstr "Незакрываемое"
+
+#: ../src/winspector.c:1109
+msgid "Not miniaturizable"
+msgstr "Несворачиваемое"
+
+#: ../src/winspector.c:1113
+msgid "Keep on top"
+msgstr "Всегда наверху"
+
+#: ../src/winspector.c:1117
+msgid "Omnipresent"
+msgstr "Присутствует везде"
+
+#: ../src/winspector.c:1121
+msgid "Don't let it take focus"
+msgstr "Не давать фокус"
+
+#: ../src/winspector.c:1125
+msgid "Skip window list"
+msgstr "Нет в списке окон"
+
+#: ../src/winspector.c:1137
+msgid "Advanced"
+msgstr "Дополнительно"
+
+#: ../src/winspector.c:1144
+msgid "Ignore HideOthers"
+msgstr "Игнорировать УбратьОстальные"
+
+#: ../src/winspector.c:1148
+msgid "Don't bind keyboard shortcuts"
+msgstr "Не проверять сочетания клавиш"
+
+#: ../src/winspector.c:1152
+msgid "Don't bind mouse clicks"
+msgstr "Не проверять щелчки мыши"
+
+#: ../src/winspector.c:1156
+msgid "Keep inside screen"
+msgstr "Всегда внутри экрана"
+
+#: ../src/winspector.c:1160
+msgid "No application icon"
+msgstr "Не показывать значок"
+
+#. miniwindow/workspace
+#: ../src/winspector.c:1172
+msgid "Miniwindow Image"
+msgstr "Миниатюрное Изображение"
+
+#: ../src/winspector.c:1178
+msgid "Browse"
+msgstr "Найти"
+
+#: ../src/winspector.c:1185
+msgid "Update"
+msgstr "Обновить"
+
+#: ../src/winspector.c:1192
+msgid "Icon file name:"
+msgstr "Имя файла значка:"
+
+#: ../src/winspector.c:1200
+msgid "Ignore client supplied icon"
+msgstr "Игнорировать внутренний значок приложения"
+
+#: ../src/winspector.c:1205
+msgid "Initial Workspace"
+msgstr "Начальное Рабочее место"
+
+#: ../src/winspector.c:1227
+msgid "Current workspace"
+msgstr "Текущее Рабочее место"
+
+#: ../src/workspace.c:91 ../src/workspace.c:92 ../src/workspace.c:359
+msgid "Workspace %i"
+msgstr "Рабочее место %i"
+
+#: ../src/workspace.c:385
+msgid "Workspaces"
+msgstr "Рабочие места"
+
+#: ../src/workspace.c:387
+msgid "could not create Workspace menu"
+msgstr "не могу создать меню Рабочих мест"
+
+#: ../src/workspace.c:394
+msgid "New"
+msgstr "Новое"
+
+#: ../src/workspace.c:395
+msgid "Destroy Last"
+msgstr "Удалить Последнее"
