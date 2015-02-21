@@ -1,0 +1,23 @@
+/* installation directory is the combination of $(DESTDIR)  and $(BINDIR)*/
+DESTDIR = /usr/bin
+BINDIR = /bin
+
+XPMLIB = -L/usr/lib/X11 -L/opt/X11_Contrib/lib/sparc -lXpm -lm  
+DEPLIBS = $(DEPXLIB) 
+
+/* uncomment -lrpcsvc at the end of the line below if compile on *sparc* */
+LOCAL_LIBRARIES = $(XPMLIB) $(XLIB) /* -lrpcsvc */
+
+LINTLIBS = $(LINTXLIB)
+
+EXTRA_INCLUDES = -I/opt/X11_Contrib/include
+
+/* if your compiler does not define linux 
+   please add -Dlinux below (if you are on a linux box :) */
+/* if you want to compile with back_less_color remove -DMANY_COLORS */
+EXTRA_DEFINES = -DMANY_COLORS  /* -Dlinux */
+
+SRCS = get_load.c wmavgload.c
+OBJS = get_load.o wmavgload.o
+
+ComplexProgramTarget(wmavgload)

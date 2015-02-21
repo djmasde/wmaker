@@ -1,0 +1,25 @@
+wmavgload v 0.6.1
+
+runs on sparc solaris and ix86 linux. Does it run on other platforms ??
+
+1. Check the Imakefile to see if all the LIBS are ok for your system.
+   ALSO, check DESTDIR and BINDIR; as they are now, a `make install'
+   will put the wmload binary in /usr/local/bin.
+   
+   Check the LOCAL_LIBS line.
+
+   If your compiler does not define 'linux' and you want to compile on linux
+   please add -Dlinux in the Imakefile where you're told to do so !
+
+2. If you encounters problems with colors (on 8bbp displays especialy), 
+   remove -DMANY_COLORS in Imakefile
+
+3. `xmkmf'
+
+4. `make'
+
+5. `make install'
+
+6. Enjoy!!!! (;-)
+
+7. send me an e-mail if you wish to see any improvements ...
