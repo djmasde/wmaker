@@ -1,0 +1,69 @@
+wmWAVE 
+Homepage: http://wmwave.sourceforge.net
+
+wmwave is dockapp for window maker to display statistical information
+about a current wirless ethernet connection.
+
+Installation:
+=============
+
+Unzip the the distribution  
+
+	tar xvfz wmwave-0-4.tgz
+
+Change directories
+
+	cd wmwave
+
+Say
+
+	make
+
+and then install the program and manpage by
+
+	make install
+
+
+Running wmwave:
+===============
+
+To run wmwave simply type
+
+	wmwave
+
+Use the command line option '-r <time in milliseconds>' to control the
+frequency of sampling of the processes. Use -display and -geometry
+options in the usual way.
+
+
+
+Troubleshooting:
+================
+
+wmwave was tested with Redhat 5.2 on Intel architecture machine
+with a /proc filesystem, and a wavelan Sliver WEP IEEE ethernet
+card. The kernel needs to support radio networking.  
+
+
+If wmwave doesn't run,  make sure that
+
+1) the kernel supports radio networking
+
+	if not recompile your kernel with
+	
+		cd /usr/src/linux
+		make xconfig
+		
+	select radio networking and follow the instructions
+	in /usr/src/linux/README.
+		
+2) the wirless ethernet card and its driver is correctly installed
+
+
+
+
+Acknowledgments:
+================
+
+I have liberally borrowed code from wmtop by Dan Piponi. Thanks!
+
