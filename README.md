@@ -18,11 +18,19 @@ In the wmaker dir:
 
 $ cd WindowMaker-0.17.5
 
+$ cd libProplist
+
 $ ./configure
 
-$make
+$ make
 
-#make install
+$ cd..
+
+$ ./configure
+
+$ make
+
+Runs with root: make install 
 
 run this in root user with su o sudo commands
 
@@ -31,4 +39,3 @@ run this in root user with su o sudo commands
 runs wmaker.inst script, and enjoy
 
 Screenshot of this older wmaker: http://i.imgur.com/prNPBkP.jpg
-
