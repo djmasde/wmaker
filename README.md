@@ -8,9 +8,7 @@ wmtime.app: version of clock "wmdate" for wmaker, hacked to show Internet Time
 
 "Swatch" and beats, re "hacked" to runs ok
 
-Added WindowMaker "Window Maker" 0.17.5, runs ok, only changues, re formated Makefiles, and configure
-
-to actual format, install without problems :)
+Added Window Maker 0.17.5, runs ok, only changues, re formated Makefiles, and configure to actual format, install without problems :)
 
 remember backup the GNUstep dir, if uses a never version of wmaker...
 
@@ -24,9 +22,13 @@ $ ./configure
 
 $make
 
-# make install
+#make install
 
 run this in root user with su o sudo commands
 
 "optionally" # make uninstall before install this very old wmaker..
+
+runs wmaker.inst script, and enjoy
+
+Screenshot of this older wmaker: http://i.imgur.com/prNPBkP.jpg
 
