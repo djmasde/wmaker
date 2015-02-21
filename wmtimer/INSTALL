@@ -1,0 +1,10 @@
+Installation instructions.
+
+ALPHA warning.. This is still in the alpha stage and has only been
+tested and compiled on a i386 Linux machine.
+
+Go to wmtimer directory and type:
+
+ make
+
+copy the wmtimer binary to a directory in your path.
