@@ -1,0 +1,17 @@
+XPMLIB = -lXpm -lm
+DEPLIBS = $(DEPXLIB)
+ 
+LOCAL_LIBRARIES = $(XPMLIB) $(XLIB)
+
+SRCS = wmtime.c \
+                wmgeneral.c \
+                misc.c \
+                list.c
+
+OBJS = wmtime.o \
+                wmgeneral.o \
+                misc.o \
+                list.o
+
+ComplexProgramTarget(wmtime)
+
