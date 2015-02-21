@@ -1,0 +1,5 @@
+#!/bin/sh
+cmd='../src/pclock -B../XPM/totd-05-24.xpm -H white'
+
+echo $cmd
+$cmd

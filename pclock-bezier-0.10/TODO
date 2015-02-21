@@ -1,0 +1,8 @@
+- add the hands to the shape mask (for transparent clocks)
+- allow smaller than 64x64 backgrounds
+- honor -geometry (well position at least)
+- run a program when clicked
+- alarm/chime functionality
+- animated hands (like those seiko watches)
+- shadows for the hands, anti-aliased hands
+- allow arbitrary pixmaps to be used as clock hands

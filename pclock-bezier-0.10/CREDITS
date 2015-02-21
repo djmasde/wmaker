@@ -1,0 +1,26 @@
+oclock.xpm       - I used to ``fake'' a clock by putting an oclock window over
+                   an empty tile. This is what it looked like.
+
+round-3d.xpm     - The default background, which I raytraced.
+
+square.xpm       - A simple square clock that fits in better with programs
+                   like wmavgload, etc.
+
+time-icon.xpm    - From a NeXTStep icon.
+
+totd-05-24.xpm   - Tile of the Day, May 24th.
+
+ugly-yellow.xpm  - An asymmetric background.
+
+will-return.xpm  - Edited from a preview at http://www.photodisc.com/.
+
+wmaker-tile.xpm  - A plain WindowMaker tile.
+
+wood-tile.xpm    - From http://themes.org/, by Michael Barnes <mibarnes@vt.edu>
+
+wristwatch.xpm   - From some watch company's web site.
+
+    Use the scripts in ./demos to see what these look like.
+
+    Much of the X code was written by looking at the many other WindowMaker
+    dock apps out there.

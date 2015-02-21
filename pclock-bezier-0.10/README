@@ -1,0 +1,20 @@
+pclock v0.10
+------------
+
+pclock is a simple analog clock program designed to run under the
+WindowMaker window manager. Any 64x64 pixmap may be used as a background,
+including tiles.
+
+One current limitation is that the clock hands are drawn within the mask of
+the background XPM file. This will be fixed soon.
+
+To build:
+  edit src/Makefile
+  make
+
+Use ``pclock --help'' for instructions.
+
+This program has only been tested with Linux and WindowMaker.
+
+Alexander@Kourakos.com
+http://www.kourakos.com/~awk/pclock/

@@ -1,0 +1,27 @@
+pclock-bezier v0.10
+-------------------
+
+site:	http://www.cs.rice.edu/~ssiyer/code/pclock-bezier/
+(with screenshots)
+
+A two-hour hack. Combined the rather cool Bezier Clock (bclock-1.0) with
+those wonky curves that bezier between the three hands, with pclock-0.10,
+so the final result is a bezierclock-windowmaker-dockapp.
+
+Additional options to pclock:
+  -b, --bezier                   become a supercute bezier clock (default)
+  -n, --no-bezier                don't do all those fancy bezierishnesses
+
+Also, clicking on the face of the clock toggles between a "normal" clock and
+a bezier clock, which could be rather useful when you get really pissed of
+those cute curvy lines that don't have too much to do with the time of day.
+
+bclock-1.0 from, among other places,
+  http://sunsite.auc.dk/linux/RPM/contrib/libc5/i386/bclock-1.0-1.i386.html
+
+\skipme,basically{arcane code details: copied in bclock's Clock.* and
+transform.* and pruned off a whole lot of code from there, and made a pretty
+small change to UpdateClock, and command line options and all that}
+
+Sitaram Iyer <ssiyer@cs.rice.edu>
+Martin DeMello <mdemello@ruf.rice.edu>

@@ -1,0 +1,5 @@
+#!/bin/sh
+cmd='../src/pclock -B../XPM/ugly-yellow.xpm -H blue -S red'
+
+echo $cmd
+$cmd
