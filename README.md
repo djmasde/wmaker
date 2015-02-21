@@ -1,12 +1,14 @@
 Repo for "destroyed or abandoned" dockers of Window Maker
 
-are two:
+are:
 
 Wmwave: show wavelan connection aka wireless status, runs ok
 
 wmtime.app: version of clock "wmdate" for wmaker, hacked to show Internet Time
 
-"Swatch" and beats, re "hacked" to runs ok
+"Swatch" and beats, re "hacked" to runs ok.
+
+wmtimer: is a dockable alarm clock.
 
 Added Window Maker 0.17.5, runs ok, only changues, re formated Makefiles, and configure to actual format, install without problems :)
 
@@ -32,10 +34,10 @@ $ make
 
 Runs with root: make install 
 
-run this in root user with su or sudo commands
+run this in root user with su or sudo commands.
 
 "optionally" # make uninstall before install this very old wmaker..
 
-runs wmaker.inst script, and enjoy
+runs wmaker.inst script, and enjoy :)
 
 Screenshot of this older wmaker: http://i.imgur.com/prNPBkP.jpg
