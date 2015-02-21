@@ -18,7 +18,7 @@ pclock-bezier: A two-hour hack. Combined the rather cool Bezier Clock (bclock-1.
 
 "hacked" to run ok. With -d command parameter, becomes in a common analog clock.
 
-wmavgload: Another system load meter.
+wmavgload: Another system load meter. With -shape and -withdrawn command parameter, becomes in a docker.
 
 wmload: Load meter docker, runs ok. With -shape and -withdrawn command parameter, becomes in a docker.
 
