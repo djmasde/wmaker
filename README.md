@@ -20,6 +20,8 @@ pclock-bezier: A two-hour hack. Combined the rather cool Bezier Clock (bclock-1.
 
 wmavgload: Another system load meter.
 
+wmload: Load meter docker, runs ok. With -shape and -withdrawn command parameter, becomes in a docker.
+
 Window Maker 0.17.5:
 
 Runs ok in 2015, only changues, re formated Makefiles, and configure to actual format, install without problems :)
