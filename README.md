@@ -62,4 +62,6 @@ runs wmaker.inst script, and enjoy :)
 
 Screenshot of this older wmaker: http://i.imgur.com/prNPBkP.jpg
 
+Added Window Maker 0.20.3 (the most old "usable"), version...
+
 PD: Added very older Window Maker pixmaps, first appeared in wmaker 0.6.3
