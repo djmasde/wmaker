@@ -1,0 +1,2 @@
+WFLAGS=" -I/usr/local/include"
+WLIBS="-L$(prefix)/lib -lWINGs -lwraster  -ltiff  -lXpm -lpng -lz -ljpeg -lungif -lm"

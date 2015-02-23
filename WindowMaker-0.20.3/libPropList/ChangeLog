@@ -1,0 +1,114 @@
+2/10/1998 - Alfredo
+
+o fixed bug in unescstr()
+
+20/08/1998 - Alfredo
+
+o Added patch related to file locking. 
+
+
+13/08/1998 - Alfredo
+
+o Fixed bug in PLGetStringDescription(). The special case of empty strings
+  was not being handled, causing libPL to not be able to read proplists
+  that it wrote itself,like:
+  	(elem1, elem2, , elem4)
+  where the 3rd element is an empty string ("").
+
+o Fixed bug in PLDeepCopy(). The copied element that was appended to the array
+  was being released.
+
+22/07/1998 - Alfredo
+
+o  Fixed crashing bug with bad proplist files
+
+
+Sun Jul 19 11:40:57 EST 1998  Alfredo
+
+o Integradted patch that fixed unescape character code in strings.
+Patch submited by Shigeru Miyata <miyata@kusm.kyoto-u.ac.jp>
+
+
+Tue Nov 25 14:48:58 MET 1997   Bjoern Giesler <giesler@ira.uka.de>
+
+o Integrated patches submitted by:
+
+    Brian Martin <brian@goober.wireless.ucsc.edu>
+      + output of config file errors w/file name and line number
+        information
+    Jehan Bing <jbing@enssat.fr>
+      + bug fix for machines where sizeof(void *) != sizeof(int)
+
+o New release 0.7.2
+
+??? ??? ?? ??:??:?? EST 1997   Alfredo Kojima <kojima@inf.ufrgs.br>
+
+o bogus documentation on PLSetFilename()/PLGetFilename()
+
+o Sys5 portability: flock changed to fcntl
+
+o removed -p pl and -Ppl options for bison and flex for compatibility
+
+
+Fri Sep 26 20:42:38 EST 1997	Alfredo Kojima <kojima@inf.ufrgs.br>
+
+o defined YYERROR_VERBOSE
+
+Sat Aug 16 23:47:34 EST 1997 	Alfredo Kojima <kojima@inf.ufrgs.br>
+
+o string size passed to scanner was causing segfault in filehandling.c
+
+o value returned from PLGetDictionaryEntry() was being released in 
+gsdd/Commands.c
+
+o gsdd/Main.c:CheckChange_multiple() was not checking if return value
+of PL functions is NULL, which caused segfaults 
+
+
+Fri Aug  8 14:16:01 EDT 1997
+
+o Changed memory-management routines to OPENSTEP-style retain/release
+  mechanism.
+
+o gsdd reads libFoundation-style multiple-file defaults now.
+
+o Fixed all the memory leaks (I hope).
+
+o Added test/memtest.c, defines for memory debugging in plconf.h and
+  tools/findleak.tcl to evaluate debugging output.
+
+o Alfredo Kojima added automake/autoconf support
+
+o New release 0.7.1
+
+Fri Jul 25 18:24:00 EDT 1997
+
+o Tuned the proplist.y file to be more forgiving on syntax errors. Due
+  to the way synchronizing works, a line containing a syntax error is
+  unfortunately "synchronized away", i.e. vanishes. Fix that.
+
+Fri Jul 11 15:50:21 EDT 1997
+
+o Added authentication.
+
+o Added "shared" target.
+
+Fri Jul 11 10:12:37 EDT 1997
+
+o New release 0.5
+
+o Added source code for the gsdd daemon
+
+o Fixed a few bugs
+
+o Added INSTALL file
+
+Mon Jul  7 15:59:11 EDT 1997
+
+o Fixed a bug in handling of variable argument lists
+
+o Added source code for the defaults program
+
+o Fixed a few bugs
+
+

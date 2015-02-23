@@ -1,0 +1,83 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:591: checking for a BSD compatible install
+configure:644: checking whether build environment is sane
+configure:701: checking whether make sets ${MAKE}
+configure:747: checking for working aclocal
+configure:760: checking for working autoconf
+configure:773: checking for working automake
+configure:786: checking for working autoheader
+configure:799: checking for working makeinfo
+configure:835: checking host system type
+configure:860: checking for gcc
+configure:937: checking whether the C compiler (gcc  ) works
+configure:951: gcc -o conftest    conftest.c  1>&5
+configure:971: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:976: checking whether we are using GNU C
+configure:1000: checking whether gcc accepts -g
+configure:1028: checking for POSIXized ISC
+configure:1051: checking for gcc
+configure:1128: checking whether the C compiler (gcc -g -O2 ) works
+configure:1142: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1162: checking whether the C compiler (gcc -g -O2 ) is a cross-compiler
+configure:1167: checking whether we are using GNU C
+configure:1191: checking whether gcc accepts -g
+configure:1219: checking whether make sets ${MAKE}
+configure:1248: checking for ranlib
+configure:1285: checking for a BSD compatible install
+configure:1335: checking whether ln -s works
+configure:1356: checking how to run the C preprocessor
+configure:1418: checking whether gcc needs -traditional
+configure:1466: checking return type of signal handlers
+configure:1507: checking for vprintf
+configure:1614: checking for working alloca.h
+configure:1647: checking for alloca
+configure:1843: checking for gethostname
+configure:1843: checking for gettimeofday
+configure:1843: checking for select
+configure:1843: checking for poll
+configure:1843: checking for strerror
+configure:1843: checking for strncasecmp
+configure:1843: checking for setpgid
+configure:1906: checking for cpp
+configure:1964: checking for gettext
+configure:2056: checking for xgettext
+configure:2246: checking for X
+configure:2560: checking for dnet_ntoa in -ldnet
+configure:2601: checking for dnet_ntoa in -ldnet_stub
+configure:2649: checking for gethostbyname
+configure:2747: checking for connect
+configure:2839: checking for remove
+configure:2931: checking for shmat
+configure:3032: checking for IceConnectionNumber in -lICE
+configure:3083: checking for _Xsetlocale in -lX11
+configure:3139: checking for XShapeSelectInput in -lXext
+configure:3197: checking for XShmAttach in -lXext
+configure:3240: checking for shmget
+configure:3344: checking for XpmCreatePixmapFromData in -lXpm
+configure:3390: checking for X11/xpm.h
+configure:3438: checking for gzread in -lz
+configure:3493: checking for png_get_valid in -lpng
+configure:3539: checking for png.h
+configure:3588: checking for jpeg_destroy_compress in -ljpeg
+configure:3638: gcc -E    conftest.c >/dev/null 2>conftest.out
+configure:3668: checking for DGifOpenFileName in -lungif
+configure:3757: checking for gif_lib.h
+configure:3817: checking for TIFFGetVersion in -ltiff
+configure:3836: gcc -o conftest -g -O2   conftest.c -ltiff    -lXext  -lX11  -lXpm -lpng -lz -ljpeg -lungif -lm  1>&5
+configure:3953: checking for tiffio.h
+configure:4101: checking for sys/wait.h that is POSIX.1 compatible
+configure:4146: checking for fcntl.h
+configure:4146: checking for limits.h
+configure:4146: checking for sys/ioctl.h
+configure:4146: checking for sys/time.h
+configure:4146: checking for sys/types.h
+configure:4146: checking for libintl.h
+configure:4146: checking for sys/select.h
+configure:4186: checking for sys_siglist declaration in signal.h or unistd.h
+configure:4224: checking for working const
+configure:4299: checking for ANSI C header files
+configure:4403: checking for size_t
+configure:4436: checking for pid_t
+configure:4469: checking whether time.h and sys/time.h may both be included
