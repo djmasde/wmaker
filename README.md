@@ -28,6 +28,8 @@ wmSun: Shows the times of the sunrise and sunset.
 
 wmix: A mixer app, for runs ok, please runs with root: modprobe snd-mixer-oss, or not runs. add a entry in /etc/rc.d/rc.local, like this: echo "modprobe snd-mixer-oss" >> /etc/rc.d/rc.local
 
+wmwifi: Show wireless status, more, than wavemon, shows essid, signal %, bitrate and etc..
+
 Window Maker 0.17.5:
 
 Runs ok in 2015, only changues, re formated Makefiles, and configure to actual format, install without problems :)
